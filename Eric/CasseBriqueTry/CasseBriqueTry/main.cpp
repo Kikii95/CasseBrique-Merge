@@ -15,9 +15,6 @@
 
 
 
-    
-
-
 
 int main() {
     Game game;
@@ -25,4 +22,3 @@ int main() {
     return 0;
 }
    
-

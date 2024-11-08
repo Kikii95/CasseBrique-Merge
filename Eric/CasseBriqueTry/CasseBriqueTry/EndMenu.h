@@ -15,6 +15,7 @@ public:
     void selectItemByMouse(sf::Vector2f& mousepos);
     int getSelectedItemIndex() const;
     void playClickSound();
+
     
 	
 
@@ -33,6 +34,7 @@ private:
     sf::Sound clickSound;
     sf::Texture backgroundTexture;
     sf::Sprite backgroundSprite;
+ 
   
 
 };

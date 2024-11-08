@@ -17,19 +17,19 @@ MainMenu::MainMenu(sf::RenderWindow& window) {
     }
     backgroundSprite.setTexture(backgroundTexture);
 
-    // Mettre la taille du sprite à la taille de la fenêtre
+    // Mettre la taille du sprite ï¿½ la taille de la fenï¿½tre
     backgroundSprite.setScale(
-        window.getSize().x / backgroundTexture.getSize().x,  // Mise à l'échelle en X
-        window.getSize().y / backgroundTexture.getSize().y   // Mise à l'échelle en Y
+        window.getSize().x / backgroundTexture.getSize().x,  // Mise ï¿½ l'ï¿½chelle en X
+        window.getSize().y / backgroundTexture.getSize().y   // Mise ï¿½ l'ï¿½chelle en Y
     );
 
     float scaleX = static_cast<float>(window.getSize().x) / backgroundTexture.getSize().x;
     float scaleY = static_cast<float>(window.getSize().y) / backgroundTexture.getSize().y;
 
-    // On prend le facteur d'échelle le plus grand pour remplir l'écran
+    // On prend le facteur d'ï¿½chelle le plus grand pour remplir l'ï¿½cran
     float scaleFactor = std::max(scaleX, scaleY);
 
-    // Appliquer l'échelle en fonction du facteur choisi
+    // Appliquer l'ï¿½chelle en fonction du facteur choisi
     backgroundSprite.setScale(scaleFactor, scaleFactor);
 
     sf::Text play("Demarrer le jeu", font, 100);
@@ -91,24 +91,24 @@ int MainMenu::getSelectedItemIndex()
 void MainMenu::selectItemByMouse( sf::Vector2f& mousepos)
 {
     for (size_t i = 0; i < menuItem.size(); ++i) {
-        // Récupère les bounds (limites) de chaque texte (ou bouton)
+        // Rï¿½cupï¿½re les bounds (limites) de chaque texte (ou bouton)
         sf::FloatRect itemBounds = menuItem[i].getGlobalBounds();
 
-        // Vérifie si la souris est dans les limites de ce texte
+        // Vï¿½rifie si la souris est dans les limites de ce texte
         if (itemBounds.contains(mousepos)) {
-            // Change la couleur de l'élément survolé
+            // Change la couleur de l'ï¿½lï¿½ment survolï¿½
             if (selectedItemIndex != i) {
-                menuItem[selectedItemIndex].setFillColor(sf::Color::White); // Réinitialise la couleur de l'élément précédemment sélectionné
-                menuItem[i].setFillColor(sf::Color::Red);  // Met en surbrillance l'élément survolé
-                selectedItemIndex = i; // Met à jour l'élément sélectionné
+                menuItem[selectedItemIndex].setFillColor(sf::Color::White); // Rï¿½initialise la couleur de l'ï¿½lï¿½ment prï¿½cï¿½demment sï¿½lectionnï¿½
+                menuItem[i].setFillColor(sf::Color::Red);  // Met en surbrillance l'ï¿½lï¿½ment survolï¿½
+                selectedItemIndex = i; // Met ï¿½ jour l'ï¿½lï¿½ment sï¿½lectionnï¿½
             }
-            break; // On arrête de parcourir les autres éléments une fois que la souris en survole un
+            break; // On arrï¿½te de parcourir les autres ï¿½lï¿½ments une fois que la souris en survole un
         }
     }
 }
 
 void MainMenu::reset() {
-    selectedItemIndex = 0;  // Réinitialise l'index à "Jouer" par défaut
+    selectedItemIndex = 0;  // Rï¿½initialise l'index ï¿½ "Jouer" par dï¿½faut
 }
 
 void MainMenu::playClickSound() {

@@ -15,8 +15,7 @@
 
 Game::Game()
     : window(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "Casse-Brique", sf::Style::Fullscreen),
-    hud(SCREEN_WIDTH, SCREEN_HEIGHT, window),
-    isGameOver(false),
+    hud(SCREEN_WIDTH, SCREEN_HEIGHT, window),     isGameOver(false),
     pad((0.8 * SCREEN_WIDTH), (0.2 * SCREEN_HEIGHT)),
     ball(pad.getPosition().first + pad.getSize().first / 2, pad.getPosition().second - ball.getSize(), (0.3 * SCREEN_HEIGHT), (0.01 * SCREEN_WIDTH)),
     levelManager(),
@@ -24,8 +23,8 @@ Game::Game()
     isMainMenuActive(true),
     isPaused(false),
     endMenu(window),
-    resolutionWidth(SCREEN_WIDTH),  // Initialisation de la résolution
-    resolutionHeight(SCREEN_HEIGHT), // Initialisation de la résolution
+    resolutionWidth(SCREEN_WIDTH),  
+    resolutionHeight(SCREEN_HEIGHT), 
     volume(50.0f),
    
     
@@ -46,7 +45,6 @@ Game::Game()
         hearts.push_back(heart);
     }
 
-    
     loadBrickTexture();
 
     std::srand(static_cast<unsigned int>(std::time(nullptr)));
@@ -142,10 +140,13 @@ void Game::processEvents() {
                     if (selectedOption == 0) {
                         restartGame();
                         isMainMenuActive = false;
+                        initializeLevelManager();
                     }
-                    else if (selectedOption == 1) {
-                        isOptionsMenuActive = true;
+                    else if (selectedOption == 2) {
                         isMainMenuActive = false;
+                        isLevelEditorActive = true;
+                        //std::cout << "Level Generator selected from main menu" << std::endl;
+
                     }
                     else if (selectedOption == 3) {
                         window.close();
@@ -177,6 +178,22 @@ void Game::processEvents() {
                 }
             }
         }
+        // else if (isPaused) {
+        //     if (event.type == sf::Event::KeyPressed) {
+        //         if (event.key.code == sf::Keyboard::Up) {
+        //             hud.getPauseMenu().moveUp();
+        //         }
+        //         else if (event.key.code == sf::Keyboard::Down) {
+        //             hud.getPauseMenu().moveDown();
+        //         }
+        //         else if (event.key.code == sf::Keyboard::Enter) {
+        //             int selectedOption = hud.getPauseMenu().getSelectedItemIndex();
+        //             if (selectedOption == 0 /*Play*/) {
+        //                 isPaused = false;
+        //             }
+        //             else if (selectedOption == 1 /* Restart */) {
+        //                 LevelType currentLevel = levelManager.getCurrentLevel();
+        //                 levelManager.initializeLevel(currentLevel, pad, ball, bricks);
         else if (isOptionsMenuActive) {
             // Gérer le mouvement de la souris et mettre à jour le volume en temps réel
             if (event.type == sf::Event::MouseMoved) {
@@ -228,9 +245,6 @@ void Game::processEvents() {
                 }
             }
         }
-
-
-
         else if (isPaused) {
             // Gérer les événements du menu de pause
             if (event.type == sf::Event::KeyPressed) {
@@ -306,6 +320,8 @@ void Game::processEvents() {
         else {
             // Gérer les autres événements (par exemple, Échap pour revenir en pause)
             if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
+                // isMainMenuActive = false;
+                // levelManager.setSelectedOption(0);
                 isPaused = !isPaused; // Bascule l'état de la pause
             }
         }
@@ -448,6 +464,8 @@ void Game::update(float deltaTime) {
             if (bricks[i].isBroken()) {
                 int randomEffectIndex = rand() % 3;
                 applyEffect(randomEffectIndex);
+                score += 10;
+                hud.updateScore(score);
                 bricks.erase(bricks.begin() + i);
                 break;
             }

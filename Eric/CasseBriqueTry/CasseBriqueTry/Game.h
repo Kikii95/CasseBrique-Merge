@@ -39,6 +39,8 @@ public:
     bool isPaused;
     bool isOptionsMenuActive;
     
+    
+
 
 protected: 
     

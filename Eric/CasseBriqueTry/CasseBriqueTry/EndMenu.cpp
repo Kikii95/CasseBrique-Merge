@@ -36,19 +36,19 @@ EndMenu::EndMenu(sf::RenderWindow& window)
    
 
     bricksRemainingText.setFont(font);
-    bricksRemainingText.setString("Bricks Remaining: 0");
+    bricksRemainingText.setString("Bricks Remaining: ");
     bricksRemainingText.setCharacterSize(40);
     bricksRemainingText.setFillColor(sf::Color::White);
     bricksRemainingText.setPosition(window.getSize().x / 2.f - bricksRemainingText.getGlobalBounds().width / 2.f, 200.f);
 
     bonusText.setFont(font);
-    bonusText.setString("Bonus Collected: 0");
+    bonusText.setString("Bonus Collected: ");
     bonusText.setCharacterSize(40);
     bonusText.setFillColor(sf::Color::White);
     bonusText.setPosition(window.getSize().x / 2.f - bonusText.getGlobalBounds().width / 2.f, 300.f);
 
     scoreText.setFont(font);
-    scoreText.setString("Final Score: 0");
+    scoreText.setString("Final Score: ");
     scoreText.setCharacterSize(40);
     scoreText.setFillColor(sf::Color::White);
     scoreText.setPosition(window.getSize().x / 2.f - scoreText.getGlobalBounds().width / 2.f, 400.f);
@@ -158,3 +158,5 @@ void EndMenu::selectItemByMouse(sf::Vector2f& mousepos) {
 void EndMenu::playClickSound() {
     clickSound.play();
 }
+
+

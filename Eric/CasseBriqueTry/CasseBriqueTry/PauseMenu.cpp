@@ -19,7 +19,7 @@ PauseMenu::PauseMenu(sf::RenderWindow& window) :  window(window) {
     }
     backgroundSprite.setTexture(backgroundTexture);
 
-    // Ajuster l'image pour qu'elle couvre toute la fenêtre
+    // Ajuster l'image pour qu'elle couvre toute la fenï¿½tre
     backgroundSprite.setScale(
         static_cast<float>(SCREEN_WIDTH) / backgroundTexture.getSize().x,
         static_cast<float>(SCREEN_HEIGHT) / backgroundTexture.getSize().y
@@ -110,18 +110,18 @@ void PauseMenu::moveDown() {
 void PauseMenu::selectItemByMouse(sf::Vector2f& mousepos)
 {
     for (size_t i = 0; i < menuItem.size(); ++i) {
-        // Récupère les bounds (limites) de chaque texte (ou bouton)
+        // Rï¿½cupï¿½re les bounds (limites) de chaque texte (ou bouton)
         sf::FloatRect itemBounds = menuItem[i].getGlobalBounds();
 
-        // Vérifie si la souris est dans les limites de ce texte
+        // Vï¿½rifie si la souris est dans les limites de ce texte
         if (itemBounds.contains(mousepos)) {
-            // Change la couleur de l'élément survolé
+            // Change la couleur de l'ï¿½lï¿½ment survolï¿½
             if (selectedItemIndex != i) {
-                menuItem[selectedItemIndex].setFillColor(sf::Color::White); // Réinitialise la couleur de l'élément précédemment sélectionné
-                menuItem[i].setFillColor(sf::Color::Red);  // Met en surbrillance l'élément survolé
-                selectedItemIndex = i; // Met à jour l'élément sélectionné
+                menuItem[selectedItemIndex].setFillColor(sf::Color::White); // Rï¿½initialise la couleur de l'ï¿½lï¿½ment prï¿½cï¿½demment sï¿½lectionnï¿½
+                menuItem[i].setFillColor(sf::Color::Red);  // Met en surbrillance l'ï¿½lï¿½ment survolï¿½
+                selectedItemIndex = i; // Met ï¿½ jour l'ï¿½lï¿½ment sï¿½lectionnï¿½
             }
-            break; // On arrête de parcourir les autres éléments une fois que la souris en survole un
+            break; // On arrï¿½te de parcourir les autres ï¿½lï¿½ments une fois que la souris en survole un
         }
     }
 }

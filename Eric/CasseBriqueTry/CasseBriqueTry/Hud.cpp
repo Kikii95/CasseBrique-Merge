@@ -1,29 +1,25 @@
 #pragma once
-#include "HUD.h"
+#include "Hud.h"
 
 HUD::HUD(int width, int height, sf::RenderWindow& window)
-    : mainMenu(window), pauseMenu(window),endMenu(window),opMenu(window), score(50)
-{
-    
+    : mainMenu(window), pauseMenu(window), endMenu(window),opMenu(window), score(50),
+    isPaused(false), isMainMenuActive(true), isGameOver(false), isOptionsMenuActive(false) {
     if (!font.loadFromFile("timesnewarial.ttf")) {
         std::cerr << "Erreur : impossible de charger la police." << std::endl;
-        
     }
     else {
-        std::cout << "Police chargée avec succès." << std::endl;
+        std::cout << "Police chargÃ©e avec succÃ¨s." << std::endl;
     }
-    
+
     scoreText.setFont(font);
     scoreText.setCharacterSize(50);
     scoreText.setFillColor(sf::Color::Red);
     scoreText.setPosition(10, 10);
-
-    
 }
 
 void HUD::draw(sf::RenderWindow& window, bool isMainMenuActive, bool isPaused, bool isGameOver,bool isOptionsMenuActive) {
-    window.clear();
-    scoreText.setString("Score : 50");
+    
+    
     window.draw(scoreText);
 
     if (isMainMenuActive) {
@@ -40,8 +36,13 @@ void HUD::draw(sf::RenderWindow& window, bool isMainMenuActive, bool isPaused, b
     }
 }
 
-
-
+void HUD::updateScore(int newScore)
+{
+    // Mettre Ã  jour le score dans l'objet scoreText
+    score = newScore;  // Met Ã  jour la variable score
+    scoreText.setString("Score : " + std::to_string(score));  // Mets Ã  jour le texte avec le score
+    std::cout << "Mise Ã  jour du score : " << score << std::endl;  // Affiche dans la console
+}
 
 void HUD::handleMouseClick( sf::Vector2f& mousepos)
 {
@@ -56,7 +57,7 @@ void HUD::handleKeyboardInput(sf::Keyboard::Key key)
 {
     
     if (isPaused) {
-        // Si le jeu est en pause, gérer les entrées du clavier pour le menu de pause
+        // Si le jeu est en pause, gï¿½rer les entrï¿½es du clavier pour le menu de pause
         if (key == sf::Keyboard::Up) {
             pauseMenu.moveUp();
         }
@@ -65,7 +66,7 @@ void HUD::handleKeyboardInput(sf::Keyboard::Key key)
         }
     }
     else if (isGameOver) {
-        // Si le jeu est terminé, gérer les entrées du clavier pour le menu de fin de jeu
+        // Si le jeu est terminï¿½, gï¿½rer les entrï¿½es du clavier pour le menu de fin de jeu
         if (key == sf::Keyboard::Up) {
             endMenu.moveUp();
         }
@@ -74,7 +75,7 @@ void HUD::handleKeyboardInput(sf::Keyboard::Key key)
         }
     }
     else if (isOptionsMenuActive) {
-        // Si le jeu est terminé, gérer les entrées du clavier pour le menu de fin de jeu
+        // Si le jeu est terminï¿½, gï¿½rer les entrï¿½es du clavier pour le menu de fin de jeu
         if (key == sf::Keyboard::Up) {
             opMenu.moveUp();
         }
@@ -83,7 +84,7 @@ void HUD::handleKeyboardInput(sf::Keyboard::Key key)
         }
     }
     else  {
-        // Si le jeu n'est pas en pause et que le jeu n'est pas terminé, gérer les entrées du clavier pour le menu principal
+        // Si le jeu n'est pas en pause et que le jeu n'est pas terminï¿½, gï¿½rer les entrï¿½es du clavier pour le menu principal
         if (key == sf::Keyboard::Up) {
             mainMenu.moveUp();
         }
@@ -100,7 +101,7 @@ int HUD::getSelectedMenuIndex()
     }
     else if (isGameOver) {
   
-        return endMenu.getSelectedItemIndex(); // Implémentation nécessaire dans EndMenu
+        return endMenu.getSelectedItemIndex(); // Implï¿½mentation nï¿½cessaire dans EndMenu
     }
     else if (isOptionsMenuActive) {
         return opMenu.getSelectedItemIndex();
@@ -108,6 +109,26 @@ int HUD::getSelectedMenuIndex()
     else {
         return mainMenu.getSelectedItemIndex();
     }
+}
+
+MainMenu& HUD::getMainMenu()
+{
+    return mainMenu;
+}
+
+PauseMenu& HUD::getPauseMenu()
+{
+    return pauseMenu;
+}
+
+EndMenu& HUD::getEndMenu()
+{
+    return endMenu;
+}
+
+OptionsMenu& HUD::getOpMenu()
+{
+    return opMenu;
 }
 
 
