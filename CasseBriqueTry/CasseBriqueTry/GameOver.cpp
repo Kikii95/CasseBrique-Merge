@@ -45,8 +45,6 @@ GameOver::GameOver(sf::RenderWindow& window) : MainMenu(window), window(window) 
     sf::FloatRect scoreBounds = scoreText.getLocalBounds();
     scoreText.setOrigin(scoreBounds.width / 2, scoreBounds.height / 2);
     scoreText.setPosition(SCREEN_WIDTH / 2, 450);
-<<<<<<< HEAD
-=======
 
     sf::Text replayText("Rejouer", font, 50);
     replayText.setFillColor(sf::Color::Red); // Sélectionné par défaut
@@ -65,7 +63,6 @@ GameOver::GameOver(sf::RenderWindow& window) : MainMenu(window), window(window) 
     // Initialise selectedItemIndex
     selectedItemIndex = 0;
     
->>>>>>> Eric
 }
 
 void GameOver::display() {
@@ -74,28 +71,16 @@ void GameOver::display() {
     window.draw(bricksRemainingText);
     window.draw(bonusText);
     window.draw(scoreText);
-<<<<<<< HEAD
-=======
+
 
     for (auto& item : menuItems) {
         window.draw(item);  // Dessine chaque élément du menu
     }
     
->>>>>>> Eric
 }
 
 
 bool GameOver::handleEvent(sf::Event& event) {
-    if (event.type == sf::Event::KeyPressed) {
-<<<<<<< HEAD
-        if (event.key.code == sf::Keyboard::Escape) {
-            // Logique pour g�rer l'appui sur Escape (retour au menu principal)
-            return true; // Retourne true pour indiquer un �v�nement trait�
-        }
-    }
-    return false; // Aucun �v�nement pertinent trait�
-}
-=======
         if (event.key.code == sf::Keyboard::Up) {
             moveUp();
         }
@@ -105,9 +90,9 @@ bool GameOver::handleEvent(sf::Event& event) {
         else if (event.key.code == sf::Keyboard::Enter) {
             select(); // Appeler la méthode de sélection
         }
+        return false
     }
-    return false;
-}
+
 
 void GameOver::moveUp() {
     if (selectedItemIndex - 1 >= 0) {
@@ -142,4 +127,3 @@ void GameOver::select() {
 int GameOver::getSelectedItemIndex() const {
     return selectedItemIndex;
 }
->>>>>>> Eric

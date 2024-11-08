@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-#include "HUD.h"
-
-HUD::HUD(int width, int height, sf::RenderWindow& window)
-    : mainMenu(window), pauseMenu(window), score(0), isPaused()
-{
-    
-    if (!font.loadFromFile("timesnewarial.ttf")) {
-        std::cerr << "Erreur : impossible de charger la police." << std::endl;
-    }
-    scoreText.setCharacterSize(50);
-    scoreText.setFillColor(sf::Color::White);
-    scoreText.setPosition(20, 20); 
-}
-
-void HUD::draw(sf::RenderWindow& window, bool isMainMenuActive) {
-=======
 #pragma once
 #include "Hud.h"
 
@@ -37,16 +20,13 @@ HUD::HUD(int width, int height, sf::RenderWindow& window)
 void HUD::draw(sf::RenderWindow& window, bool isMainMenuActive, bool isPaused, bool isGameOver,bool isOptionsMenuActive) {
     
     
->>>>>>> Eric
     window.draw(scoreText);
 
     if (isMainMenuActive) {
         mainMenu.draw(window);
     }
     else if (isPaused) {
-<<<<<<< HEAD
-        pauseMenu.draw(window);
-=======
+
         pauseMenu.display(window);
     }
     else if (isGameOver) {
@@ -54,59 +34,29 @@ void HUD::draw(sf::RenderWindow& window, bool isMainMenuActive, bool isPaused, b
     }
     else if (isOptionsMenuActive) {
         opMenu.display(window);
->>>>>>> Eric
     }
 }
 
 void HUD::updateScore(int newScore)
 {
-<<<<<<< HEAD
-    score = newScore;
-    scoreText.setString("Score: " + std::to_string(score));
-}
 
-void HUD::showPauseMenu(bool show)
-{
-    isPaused = show;
-=======
     // Mettre à jour le score dans l'objet scoreText
     score = newScore;  // Met à jour la variable score
     scoreText.setString("Score : " + std::to_string(score));  // Mets à jour le texte avec le score
     std::cout << "Mise à jour du score : " << score << std::endl;  // Affiche dans la console
->>>>>>> Eric
 }
 
 void HUD::handleMouseClick( sf::Vector2f& mousepos)
 {
-<<<<<<< HEAD
     if (isPaused) {
         pauseMenu.selectItemByMouse(mousepos);
     } else {
         mainMenu.selectItemByMouse(mousepos);
     }
-=======
-   /* if (isPaused) {
-        pauseMenu.selectItemByMouse(mousepos);
-    } else {
-        mainMenu.selectItemByMouse(mousepos);
-    }*/
->>>>>>> Eric
 }
 
 void HUD::handleKeyboardInput(sf::Keyboard::Key key)
 {
-<<<<<<< HEAD
-    if (isPaused) {
-        if (key == sf::Keyboard::Up) {
-            pauseMenu.moveUp();
-        } else if (key == sf::Keyboard::Down) {
-            pauseMenu.moveDown();
-        }
-    } else {
-        if (key == sf::Keyboard::Up) {
-            mainMenu.moveUp();
-        } else if (key == sf::Keyboard::Down) {
-=======
     
     if (isPaused) {
         // Si le jeu est en pause, g�rer les entr�es du clavier pour le menu de pause
@@ -141,7 +91,6 @@ void HUD::handleKeyboardInput(sf::Keyboard::Key key)
             mainMenu.moveUp();
         }
         else if (key == sf::Keyboard::Down) {
->>>>>>> Eric
             mainMenu.moveDown();
         }
     }
@@ -149,11 +98,6 @@ void HUD::handleKeyboardInput(sf::Keyboard::Key key)
 
 int HUD::getSelectedMenuIndex()
 {
-<<<<<<< HEAD
-    return isPaused ? pauseMenu.getSelectedItemIndex() : mainMenu.getSelectedItemIndex();
-}
-
-=======
     if (isPaused) {
         return pauseMenu.getSelectedItemIndex();
     }
@@ -191,5 +135,4 @@ OptionsMenu& HUD::getOpMenu()
 
 
 
->>>>>>> Eric
 HUD::~HUD() {}

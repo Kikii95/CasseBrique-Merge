@@ -10,18 +10,17 @@
 #include "BackgroundShader.h"  // Inclusion correcte du shader
 #include "EndMenu.h"
 #include "Utils.h"
+#include "PauseMenu.h"
 
 #define SCREEN_WIDTH 3840
 #define SCREEN_HEIGHT 2160
 
-
 using json = nlohmann::json;
-
 
 Game::Game()
     : window(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "Casse-Brique", sf::Style::Fullscreen),
     hud(SCREEN_WIDTH, SCREEN_HEIGHT, window),
-         gameOverScreen(window),
+    gameOverScreen(window),
     pad((0.8 * SCREEN_WIDTH), (0.2 * SCREEN_HEIGHT)),
     ball(pad.getPosition().first + pad.getSize().first / 2, pad.getPosition().second - ball.originalSize, ball.originalSpeed, ball.originalSize),
     levelManager(),
@@ -29,8 +28,8 @@ Game::Game()
     isMainMenuActive(true),
     isPaused(false),
     endMenu(window),
-    resolutionWidth(SCREEN_WIDTH),  
-    resolutionHeight(SCREEN_HEIGHT), 
+    resolutionWidth(SCREEN_WIDTH),
+    resolutionHeight(SCREEN_HEIGHT),
     volume(50.0f),
     padShape(sf::Vector2f(pad.getSize().first, pad.getSize().second))
 {
@@ -38,19 +37,18 @@ Game::Game()
         std::cerr << "Erreur : Impossible de charger la texture du pad." << std::endl;
     }
 
-    // Charger le shader depuis le fichier
     if (!backgroundShader.loadFromMemory(fragmentShaderCode, sf::Shader::Fragment)) {
         std::cerr << "Erreur : impossible de charger le shader d'arrière-plan depuis la mémoire" << std::endl;
     }
     else {
         std::cout << "Shader chargé avec succès depuis la mémoire" << std::endl;
     }
-    
+
     if (!heartTexture.loadFromFile("heart.png")) {
-        std::cerr << "Erreur : Impossible de charger la texture de c�ur" << std::endl;
+        std::cerr << "Erreur : Impossible de charger la texture de coeur" << std::endl;
     }
     if (!heartLostTexture.loadFromFile("heart_black.png")) {
-        std::cerr << "Erreur : Impossible de charger la texture de c�ur perdu" << std::endl;
+        std::cerr << "Erreur : Impossible de charger la texture de coeur perdu" << std::endl;
     }
 
     for (int i = 0; i < 3; ++i) {
@@ -64,13 +62,13 @@ Game::Game()
 
     std::srand(static_cast<unsigned int>(std::time(nullptr)));
     padShape.setFillColor(sf::Color::Blue);
-    Brick::loadTextures(); // Charger toutes les textures de briques une fois au démarrage
+    Brick::loadTextures();
     createInitialBricks(7, 14, (SCREEN_WIDTH / 16), (SCREEN_HEIGHT / 27));
 }
 
 void Game::createInitialBricks(int rows, int columns, int brickWidth, int brickHeight) {
     int totalWidth = columns * brickWidth;
-    int startX = (SCREEN_WIDTH - totalWidth) / 2; 
+    int startX = (SCREEN_WIDTH - totalWidth) / 2;
     int topOffset = 150;
 
     for (int i = 0; i < rows; ++i) {
@@ -82,9 +80,6 @@ void Game::createInitialBricks(int rows, int columns, int brickWidth, int brickH
         }
     }
 }
-
-
-
 
 void Game::loadBricksFromJson() {
     std::ifstream file("level_3.json");
@@ -101,58 +96,43 @@ void Game::loadBricksFromJson() {
         int posY = brickData["positionY"];
         int width = brickData["sizeX"];
         int height = brickData["sizeY"];
-
-        // Création de la brique avec les données du fichier JSON
         bricks.emplace_back(posX, posY, width, height);
 
-        // Affichage de débogage pour chaque brique
         std::cout << "Brique chargée : Position (" << posX << ", " << posY
             << "), Taille (" << width << ", " << height << ")" << std::endl;
     }
 
     std::cout << "Toutes les briques ont été chargées depuis level_3.json" << std::endl;
-
 }
 
-
 void Game::restartGame() {
-    // Réinitialisation des variables
     isGameOver = false;
     isMainMenuActive = true;
     isPaused = false;
     lives = 3;
     score = 0;
     bonusCount = 0;
-    bricks.clear();  
-    hearts.clear();  
-    activeBallEffects.clear();  
+    bricks.clear();
+    hearts.clear();
+    activeBallEffects.clear();
     isBallLaunched = false;
 
-    // Réinitialiser la balle et le pad
     ball.setPosition(pad.getPosition().first + pad.getSize().first / 2, pad.getPosition().second - ball.getSize() / 2);
     ball.setSpeed(400);
-    loadBrickTexture();  
-    // bricks = Brick::createBricks(5, 10, (0.06 * SCREEN_WIDTH), (0.02 * SCREEN_WIDTH)); 
+    loadBrickTexture();
 
-    // Réinitialiser le menu
-    hud.getMainMenu().reset();  
+    hud.getMainMenu().reset();
     hud.updateScore(score);
-
-    // Réinitialiser la musique
-    
-
-    
 }
-
 
 void Game::run() {
     while (window.isOpen()) {
         processEvents();
         float deltaTime = clock.restart().asSeconds();
 
-        if (isLevelEditorActive) {  // Quand l'éditeur est actif
+        if (isLevelEditorActive) {
             window.clear();
-            levelGenerator.drawGrid(window);  // Affiche le quadrillage
+            levelGenerator.drawGrid(window);
             window.display();
         }
         else if (!isMainMenuActive && !isPaused && !isGameOver) {
@@ -163,13 +143,12 @@ void Game::run() {
     }
 }
 
-
 void Game::resetBall() {
-        for (auto& effect : activeBallEffects) {
+    for (auto& effect : activeBallEffects) {
         effect->removeEffect();
     }
-    activeBallEffects.clear(); 
-        if (activeBalls.empty()) {
+    activeBallEffects.clear();
+    if (activeBalls.empty()) {
         Ball newBall(pad.getPosition().first + pad.getSize().first / 2,
             pad.getPosition().second - ball.originalSize / 2,
             ball.originalSpeed,
@@ -177,25 +156,20 @@ void Game::resetBall() {
         activeBalls.push_back(newBall);
     }
 
-        Ball& mainBall = activeBalls.front();
+    Ball& mainBall = activeBalls.front();
     mainBall.setPosition(pad.getPosition().first + pad.getSize().first / 2,
         pad.getPosition().second - mainBall.getSize() / 2);
     mainBall.setSpeed(ball.originalSpeed);
 
-        float directionX;
+    float directionX;
     do {
         directionX = (static_cast<float>(std::rand()) / RAND_MAX) * 0.8f - 0.4f;
     } while (std::abs(directionX) < 0.1f);
 
     mainBall.setDirection(directionX, -1.0f);
     mainBall.normalizeDirection();
-
-    isBallLaunched = false; }
-
-
-
-
-
+    isBallLaunched = false;
+}
 
 void Game::processEvents() {
     sf::Event event;
@@ -220,277 +194,32 @@ void Game::processEvents() {
                 else if (event.key.code == sf::Keyboard::Enter) {
                     int selectedOption = hud.getMainMenu().getSelectedItemIndex();
                     if (selectedOption == 0) {
-                        // "Démarrer le jeu" => Mode éditeur de niveau vide
                         isMainMenuActive = false;
-                        isGameActive = true;  // Utiliser isGameActive pour l'affichage
+                        isGameActive = true;
                     }
                     else if (selectedOption == 1) {
                         restartGame();
                         isMainMenuActive = false;
                         initializeLevelManager();
-                        //std::cout << "Level Generator selected from main menu" << std::endl;
-
                     }
                     else if (selectedOption == 2) {
-                        // "Level Generator" => Mode éditeur complet avec ajout de briques
                         isMainMenuActive = false;
                         isLevelEditorActive = true;
-                       
                     }
-                    
                     else if (selectedOption == 3) {
                         window.close();
                     }
-                }
-                else if (event.type == sf::Event::MouseMoved) {
-                sf::Vector2f mousepos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
-                hud.getMainMenu().selectItemByMouse(mousepos);
-                }
-                else if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
-                    sf::Vector2f mousepos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
-                    hud.getMainMenu().selectItemByMouse(mousepos);
-
-                    int selectedOption = hud.getMainMenu().getSelectedItemIndex();
-                    if (selectedOption == 0) {
-                        hud.getMainMenu().getClickSound().play();
-                        restartGame();
-                        isMainMenuActive = false;
-                    }
-                    else if (selectedOption == 1) {
-                        hud.getMainMenu().getClickSound().play();
-                        isOptionsMenuActive = true;
-                        isMainMenuActive = false;
-                    }
-                    else if (selectedOption == 3) {
-                        hud.getMainMenu().getClickSound().play();
-                        window.close();
-                    }
-                }
-            }
-        }
-        else if (isLevelEditorActive) {  // Mode éditeur de niveau
-            if (event.type == sf::Event::MouseButtonPressed) {
-                if (event.mouseButton.button == sf::Mouse::Left) {
-                    sf::Vector2i mousePos = sf::Mouse::getPosition(window);
-                    levelGenerator.handleMouseClick(mousePos); // Place une brique
-                }
-            }
-            if (event.type == sf::Event::KeyPressed) {
-                if (event.key.code == sf::Keyboard::S) {
-                    levelGenerator.saveLevel(); // Sauvegarde le niveau en JSON
-                }
-                else if (event.key.code == sf::Keyboard::Escape) {
-                    isLevelEditorActive = false;
-                    isMainMenuActive = true;  // Retour au menu principal
-        }
-        // else if (isPaused) {
-        //     if (event.type == sf::Event::KeyPressed) {
-        //         if (event.key.code == sf::Keyboard::Up) {
-        //             hud.getPauseMenu().moveUp();
-        //         }
-        //         else if (event.key.code == sf::Keyboard::Down) {
-        //             hud.getPauseMenu().moveDown();
-        //         }
-        //         else if (event.key.code == sf::Keyboard::Enter) {
-        //             int selectedOption = hud.getPauseMenu().getSelectedItemIndex();
-        //             if (selectedOption == 0 /*Play*/) {
-        //                 isPaused = false;
-        //             }
-        //             else if (selectedOption == 1 /* Restart */) {
-        //                 LevelType currentLevel = levelManager.getCurrentLevel();
-        //                 levelManager.initializeLevel(currentLevel, pad, ball, bricks);
-        else if (isOptionsMenuActive) {
-            // Gérer le mouvement de la souris et mettre à jour le volume en temps réel
-            if (event.type == sf::Event::MouseMoved) {
-                sf::Vector2i mousePixelPos = sf::Mouse::getPosition(window);
-                sf::Vector2f mousePos = window.mapPixelToCoords(mousePixelPos);
-
-                // Vérifie si la souris est au-dessus de la barre de volume
-                if (hud.getOpMenu().getVolumeBar().getGlobalBounds().contains(mousePos)) {
-                    // Calculer la position relative de la souris sur la barre de volume
-                    float newVolume = (mousePos.x - hud.getOpMenu().getVolumeBar().getPosition().x) / hud.getOpMenu().getVolumeBar().getSize().x;
-
-                    // Limiter la valeur du volume entre 0 et 1
-                    clamp(newVolume, 0.0f, 1.0f);
-
-                    // Mettre à jour le volume (en pourcentage)
-                    hud.getOpMenu().setVolume(newVolume * 100.0f);  // Convertir en pourcentage (0-100)
-
-                    // Déplacer le curseur de volume à la position appropriée
-                    hud.getOpMenu().updateVolumeSlider(mousePos);    // Déplacer le curseur visuellement
-                }
-
-                // Sélectionner un élément du menu par la souris
-                hud.getOpMenu().selectItemByMouse(mousePos);
-            }
-
-            // Gérer le clic de la souris pour d'autres actions si nécessaire
-            if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
-                sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
-                hud.getOpMenu().selectItemByMouse(mousePos);
-
-                int selectedOption = hud.getOpMenu().getSelectedItemIndex();
-                if (selectedOption == 1) { // Résolution (changer la résolution)
-                    if (resolutionWidth == 2560 && resolutionHeight == 1440) {
-                        // Change la résolution à 1920x1080
-                        hud.getOpMenu().changeResolution(1920, 1080);
-                        resolutionWidth = 1920;
-                        resolutionHeight = 1080;
-                    }
-                    else {
-                        // Change la résolution à 2560x1440
-                        hud.getOpMenu().changeResolution(2560, 1440);
-                        resolutionWidth = 2560;
-                        resolutionHeight = 1440;
-                    }
-                }
-                else if (selectedOption == 2) { // Revenir au menu principal
-                    isOptionsMenuActive = false;
-                    isMainMenuActive = true;
-                }
-            }
-        }
-        else if (isPaused) {
-            // Gérer les événements du menu de pause
-            if (event.type == sf::Event::KeyPressed) {
-                if (event.key.code == sf::Keyboard::Escape) {
-                    isPaused = false;  // Quitter le menu de pause
-                }
-            }
-            if (event.type == sf::Event::MouseMoved) {
-                sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
-                hud.getPauseMenu().selectItemByMouse(mousePos);
-            }
-            if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
-                sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
-                hud.getPauseMenu().selectItemByMouse(mousePos);
-
-                int selectedOption = hud.getPauseMenu().getSelectedItemIndex();
-                if (selectedOption == 0) { // Reprendre le jeu
-                    hud.getPauseMenu().getClickSound().play();
-                    isPaused = false;
-                }
-                else if (selectedOption == 1) { // Retourner au menu principal
-                    hud.getPauseMenu().getClickSound().play();
-                    isOptionsMenuActive = true;
-                    isPaused = false;
-                }
-                else if (selectedOption == 2) { // Quitter
-                    hud.getPauseMenu().getClickSound().play();
-                    isMainMenuActive = true;
-                    isPaused = false;
-                }
-            }
-        }
-        else if (isGameOver) {
-            // Gérer les événements du menu de fin
-            if (endMenu.handleEvent(event)) {
-                int selectedOption = endMenu.getSelectedItemIndex();
-                if (selectedOption == 0) { // "Retry"
-                    endMenu.playClickSound();
-                    restartGame();
-                    isMainMenuActive = false;
-                }
-                else if (selectedOption == 1) { // "Quit"
-                    endMenu.playClickSound();
-                    isOptionsMenuActive = true;
-                    isGameOver = false;
-                }
-                else if (selectedOption == 2) { // "Quit"
-                    endMenu.playClickSound();
-                    window.close();
-                }
-            }
-            if (event.type == sf::Event::MouseMoved) {
-                sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
-                endMenu.selectItemByMouse(mousePos); // Change la sélection par la souris
-            }
-
-            if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
-                sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
-                endMenu.selectItemByMouse(mousePos); // Sélectionner l'élément par souris
-
-                int selectedOption = endMenu.getSelectedItemIndex();
-                if (selectedOption == 0) { // "Retry"
-                    endMenu.playClickSound();
-                    restartGame();
-                    isMainMenuActive = false;
-                }
-                else if (selectedOption == 2) { // "Quit"
-                    endMenu.playClickSound();
-                    window.close();
-                }
-            }
-        }
-        else {
-            // Gérer les autres événements (par exemple, Échap pour revenir en pause)
-            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
-                // isMainMenuActive = false;
-                // levelManager.setSelectedOption(0);
-                isPaused = !isPaused; // Bascule l'état de la pause
-            }
-        }
-        if (event.type == sf::Event::KeyPressed) {
-            if (event.key.code == sf::Keyboard::Up) {
-                hud.getPauseMenu().moveUp();
-            }
-            else if (event.key.code == sf::Keyboard::Down) {
-                hud.getPauseMenu().moveDown();
-            }
-            else if (event.key.code == sf::Keyboard::Enter) {
-                int selectedOption = hud.getPauseMenu().getSelectedItemIndex();
-                if (selectedOption == 0) {
-                    isPaused = false;
-                }
-                else if (selectedOption == 1) {
-                    LevelType currentLevel = levelManager.getCurrentLevel();
-                    levelManager.initializeLevel(currentLevel, pad, ball, bricks);
-
-                    lives = 3;
-                    for (size_t i = 0; i < hearts.size(); ++i) {
-                        hearts[i].setTexture(heartTexture);
-                    }
-
-                    isBallLaunched = false;
-                    isPaused = false;
-                }
-                else if (selectedOption == 3) {
-                    isMainMenuActive = true;
-                    isPaused = false;
-                }
                 }
             }
         }
     }
 }
 
-
-
-
 void Game::update(float deltaTime) {
     if (isGameOver) {
         return;
     }
     if (!isMainMenuActive && !isPaused && !isGameOver) {
-        float moveDirection = /*ball.areControlsReversed() ? -1.0f :*/ 1.0f;
-
-        if (isBallLaunched && sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-            if (moveDirection > 0) {
-                pad.moveLeft(deltaTime);
-            }
-            else {
-                pad.moveRight(deltaTime);
-            }
-        }
-        if (isBallLaunched && sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-            if (moveDirection > 0) {
-                pad.moveRight(deltaTime);
-            }
-            else {
-                pad.moveLeft(deltaTime);
-            }
-        }
-
         if (!isBallLaunched) {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
                 float directionX;
@@ -510,17 +239,14 @@ void Game::update(float deltaTime) {
             for (auto& ball : activeBalls) {
                 ball.move(deltaTime, padShape, bricks, pad);
             }
-
             checkLife();
             checkVictoryCondition();
         }
 
         padShape.setPosition(pad.getPosition().first, pad.getPosition().second);
-
         for (size_t i = 0; i < bricks.size(); ++i) {
             if (!bricks[i].isBroken() && ball.getShape().getGlobalBounds().intersects(bricks[i].getShape().getGlobalBounds())) {
                 bricks[i].takeHit();
-
                 if (bricks[i].isDestroyed()) {
                     int randomEffectIndex = rand() % 22;
                     applyEffect(randomEffectIndex);
@@ -529,33 +255,15 @@ void Game::update(float deltaTime) {
                     i--;
                     break;
                 }
-                break; 
+                break;
             }
         }
-        for (auto& effect : activeBallEffects) {
-            effect->update(deltaTime);
-        }
-
-        activeBallEffects.erase(
-            std::remove_if(
-                activeBallEffects.begin(),
-                activeBallEffects.end(),
-                [](const std::unique_ptr<BallEffect>& effect) {
-                    return !effect->isEffectActive();
-                }
-            ),
-            activeBallEffects.end()
-        );
     }
 }
-
 
 void Game::updateLevelEditor() {
     levelGenerator.drawGrid(window);
 }
-
-
-
 
 void Game::initializeMusic() {
     if (music.loadFromFile("medievale.ogg")) {
@@ -574,11 +282,8 @@ void Game::initializeLevelManager() {
         window.close();
         return;
     }
-
     levelManager.initializeLevel(levelManager.getCurrentLevel(), pad, ball, bricks);
 }
-
-
 
 void Game::saveLevel() {
     int levelNumber = getNextLevelNumber();
@@ -593,41 +298,36 @@ void Game::saveLevel() {
                 << brick.getSizeY() << "\n";
         }
         levelFile.close();
-        std::cout << "Niveau " << levelNumber << " enregistr� sous " << fileName << std::endl;
+        std::cout << "Niveau " << levelNumber << " enregistré sous " << fileName << std::endl;
     }
     else {
-        std::cerr << "Erreur : impossible de cr�er le fichier " << fileName << std::endl;
+        std::cerr << "Erreur : impossible de créer le fichier " << fileName << std::endl;
     }
 }
-
 
 void Game::checkLife() {
-        for (auto it = activeBalls.begin(); it != activeBalls.end();) {
+    for (auto it = activeBalls.begin(); it != activeBalls.end();) {
         if (it->getPosition().second > SCREEN_HEIGHT) {
-            it = activeBalls.erase(it);         }
+            it = activeBalls.erase(it);
+        }
         else {
-            ++it;         }
+            ++it;
+        }
     }
 
-        if (activeBalls.empty()) {
+    if (activeBalls.empty()) {
         --lives;
-
-                if (lives >= 0 && lives < hearts.size()) {
+        if (lives >= 0 && lives < hearts.size()) {
             hearts[lives].setTexture(heartLostTexture);
         }
-
         if (lives > 0) {
-                        resetBall();         }
+            resetBall();
+        }
         else {
-                        isGameOver = true;
+            isGameOver = true;
         }
     }
 }
-
-
-
-
-
 
 void Game::checkVictoryCondition() {
     bool allBroken = true;
@@ -637,7 +337,6 @@ void Game::checkVictoryCondition() {
             break;
         }
     }
-
     if (allBroken) {
         isVictory = true;
         isMainMenuActive = true;
@@ -645,81 +344,58 @@ void Game::checkVictoryCondition() {
     }
 }
 
-
-
 void Game::applyEffect(int effectIndex) {
     std::unique_ptr<BallEffect> newEffect;
     int duration = BallEffect::getEffectDuration();
 
     for (const auto& effect : activeBallEffects) {
         if (effect->getType() == static_cast<BallEffectType>(effectIndex)) {
-            effect->resetDuration();             return;
+            effect->resetDuration();
+            return;
         }
     }
 
     switch (effectIndex) {
-    case 0:         newEffect = std::make_unique<BallSpeedBoost>(ball, activeBalls, duration);
-        break;
-    case 1:         newEffect = std::make_unique<BallSpeedNerf>(ball, activeBalls, duration);
-        break;
-    case 2:         newEffect = std::make_unique<BallSizeBoost>(ball, activeBalls, duration);
-        break;
-    case 3:         newEffect = std::make_unique<BallSizeNerf>(ball, activeBalls, duration);
-        break;
-    case 4:         newEffect = std::make_unique<BallPiercing>(ball, activeBalls, duration);
-        break;
-    case 5:         newEffect = std::make_unique<BallRandomDirection>(ball, activeBalls);
-        break;
-    case 6:         newEffect = std::make_unique<BallMultiplier>(ball, activeBalls, duration, 2);
-        break;
-    case 7:         newEffect = std::make_unique<BallReverse>(ball, activeBalls, duration);
-        break;
-    case 8:         newEffect = std::make_unique<BallTeleport>(ball, activeBalls);
-        break;
-    case 9:         newEffect = std::make_unique<BallChaos>(ball, activeBalls, padShape, duration);
-        break;
-    case 10:         newEffect = std::make_unique<BallInvisible>(ball, activeBalls, duration);
-        break;
-    case 11:         newEffect = std::make_unique<BallSplit>(ball, activeBalls, duration);
-        break;
-        /*case 12:         newEffect = std::make_unique<BallExplosive>(ball, bricks, duration);
-            break;
-        case 13:         newEffect = std::make_unique<BallPathPredictor>(ball, window, duration);
-            break;*/
+    case 0: newEffect = std::make_unique<BallSpeedBoost>(ball, activeBalls, duration); break;
+    case 1: newEffect = std::make_unique<BallSpeedNerf>(ball, activeBalls, duration); break;
+    case 2: newEffect = std::make_unique<BallSizeBoost>(ball, activeBalls, duration); break;
+    case 3: newEffect = std::make_unique<BallSizeNerf>(ball, activeBalls, duration); break;
+    case 4: newEffect = std::make_unique<BallPiercing>(ball, activeBalls, duration); break;
+    case 5: newEffect = std::make_unique<BallRandomDirection>(ball, activeBalls); break;
+    case 6: newEffect = std::make_unique<BallMultiplier>(ball, activeBalls, duration, 2); break;
+    case 7: newEffect = std::make_unique<BallReverse>(ball, activeBalls, duration); break;
+    case 8: newEffect = std::make_unique<BallTeleport>(ball, activeBalls); break;
+    case 9: newEffect = std::make_unique<BallChaos>(ball, activeBalls, padShape, duration); break;
+    case 10: newEffect = std::make_unique<BallInvisible>(ball, activeBalls, duration); break;
+    case 11: newEffect = std::make_unique<BallSplit>(ball, activeBalls, duration); break;
     }
+    activeBallEffects.push_back(std::move(newEffect));
 }
 
 void Game::loadBrickTexture() {
-   /* if (!Brick::brickTexture.loadFromFile("path_to_your_brick_texture.png")) {
-        std::cerr << "Erreur : Impossible de charger la texture des briques" << std::endl;
-    }*/
+    // Placeholder for brick texture loading
 }
 
 int Game::getNextLevelNumber() {
     int level = 1;
     std::string filename;
-
-    // Boucle pour trouver le prochain numéro de fichier disponible
     do {
         filename = "level_" + std::to_string(level) + ".json";
         std::ifstream file(filename);
         if (!file) {
-            break; // Si le fichier n'existe pas, on a trouvé le prochain numéro disponible
+            break;
         }
         level++;
     } while (true);
-
     return level;
 }
 
 void Game::render() {
     window.clear();
-
-     hud.draw(window, isMainMenuActive, isPaused, isGameOver, isOptionsMenuActive);
+    hud.draw(window, isMainMenuActive, isPaused, isGameOver, isOptionsMenuActive);
 
     if (isLevelEditorActive) {
-        window.clear(sf::Color::Black);
-        levelGenerator.drawGrid(window); 
+        levelGenerator.drawGrid(window);
     }
     else {
         backgroundShader.setUniform("iTime", clock.getElapsedTime().asSeconds());
@@ -728,13 +404,11 @@ void Game::render() {
         sf::RectangleShape background(sf::Vector2f(resolution.x, resolution.y));
         background.setPosition(0, 0);
         window.draw(background, &backgroundShader);
-        
 
         if (isMainMenuActive) {
             hud.draw(window, isMainMenuActive);
         }
         else if (isGameActive) {
-            hud.draw(window, isMainMenuActive);
             for (auto& heart : hearts) {
                 window.draw(heart);
             }
@@ -756,5 +430,3 @@ void Game::render() {
         window.display();
     }
 }
-
-

@@ -54,7 +54,7 @@ protected:
 
 
 private:
-    void processEvents();
+    void restartGame();
     void resetBall();
     void loadBrickTexture();
     void initializeLevelManager();
@@ -84,11 +84,12 @@ private:
     std::vector<Ball> activeBalls;
     LevelGenerator levelGenerator;
     void checkLife();
-    EndMenu endMenu;
     OptionsMenu* optionsMenu;
     bool isVolumeChanged;
     bool isResolutionChanged;
     float volume; // Volume initial
     int resolutionWidth;
     int resolutionHeight;
+    void processEvents();
+
 };

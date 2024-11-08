@@ -13,7 +13,7 @@ Ball::Ball(float posx, float posy, float spd, int sz)
 }
 
 void Ball::display() {
-    std::cout << "Ball a la position : " << positionx << ", " << positiony << std::endl;
+    std::cout << "Ball à la position : " << positionx << ", " << positiony << std::endl;
 }
 
 void Ball::setSpeed(int spd) {
@@ -24,18 +24,18 @@ int Ball::getSpeed() {
     return speed;
 }
 
-void Ball::setPiercing(bool value) { 
-    isPiercing = value; 
+void Ball::setPiercing(bool value) {
+    isPiercing = value;
 }
 
-bool Ball::getPiercing() const { 
-    return isPiercing; 
+bool Ball::getPiercing() const {
+    return isPiercing;
 }
 
 void Ball::setSize(int siz) {
     size = siz;
-    ballShape.setRadius(size / 2); 
-    ballShape.setOrigin(size / 2, size / 2); 
+    ballShape.setRadius(size / 2);
+    ballShape.setOrigin(size / 2, size / 2);
 }
 
 int Ball::getSize() {
@@ -43,21 +43,20 @@ int Ball::getSize() {
 }
 
 void Ball::setScoreMultiplier(int multiplier) {
-    scoreMultiplier = multiplier > 0 ? multiplier : 1; 
+    scoreMultiplier = multiplier > 0 ? multiplier : 1;
 }
 
-int Ball::getScoreMultiplier() const { 
-    return scoreMultiplier; 
+int Ball::getScoreMultiplier() const {
+    return scoreMultiplier;
 }
 
 bool Ball::isReverseBounceActive() const {
-    return reverseBounce; 
+    return reverseBounce;
 }
 
 void Ball::setReverseBounce(bool reverse) {
     reverseBounce = reverse;
 }
-
 
 sf::CircleShape& Ball::getShape() {
     return ballShape;
@@ -85,34 +84,32 @@ void Ball::padBounce(sf::RectangleShape& pad) {
 
         directionX = reverseBounce ? -normalizedDistance : normalizedDistance;
 
-                directionY = -1.0f;
+        directionY = -1.0f;
 
         normalizeDirection();
     }
 }
 
-
 void Ball::wallBounce(Pad& pad) {
-    if (positionx - size / 2 <= 0) {          directionX = std::abs(directionX);
+    if (positionx - size / 2 <= 0) {
+        directionX = std::abs(directionX);
         if (reverseBounce) {
-            directionY = -directionY;          }
-    }
-    else if (positionx + size / 2 >= SCREEN_WIDTH) {         directionX = -std::abs(directionX);
-        if (reverseBounce) {
-            directionY = -directionY;          }
-    }
-
-    if (positiony - size / 2 <= 0) {          directionY = std::abs(directionY);
-        if (reverseBounce) {
-            directionX = -directionX;          }
-    }
-
-    /*if (positiony + size / 2 >= SCREEN_HEIGHT) {
-        if (pad.isShieldActive()) {
-            directionY = -std::abs(directionY);
-            std::cout << "Shield deflected the ball at the bottom wall!\n";
+            directionY = -directionY;
         }
-    }*/
+    }
+    else if (positionx + size / 2 >= SCREEN_WIDTH) {
+        directionX = -std::abs(directionX);
+        if (reverseBounce) {
+            directionY = -directionY;
+        }
+    }
+
+    if (positiony - size / 2 <= 0) {
+        directionY = std::abs(directionY);
+        if (reverseBounce) {
+            directionX = -directionX;
+        }
+    }
 }
 
 void Ball::brickBounce(Brick& brick) {
@@ -120,23 +117,28 @@ void Ball::brickBounce(Brick& brick) {
         sf::FloatRect brickBounds(brick.getBounds());
         sf::FloatRect ballBounds = ballShape.getGlobalBounds();
 
-                float overlapLeft = ballBounds.left + ballBounds.width - brickBounds.left;
+        float overlapLeft = ballBounds.left + ballBounds.width - brickBounds.left;
         float overlapRight = brickBounds.left + brickBounds.width - ballBounds.left;
         float overlapTop = ballBounds.top + ballBounds.height - brickBounds.top;
         float overlapBottom = brickBounds.top + brickBounds.height - ballBounds.top;
 
         float minOverlap = std::min({ overlapLeft, overlapRight, overlapTop, overlapBottom });
 
-        if (minOverlap == overlapLeft) {              directionX = -std::abs(directionX);
+        if (minOverlap == overlapLeft) {
+            directionX = -std::abs(directionX);
         }
-        else if (minOverlap == overlapRight) {              directionX = std::abs(directionX);
+        else if (minOverlap == overlapRight) {
+            directionX = std::abs(directionX);
         }
-        else if (minOverlap == overlapTop) {              directionY = -std::abs(directionY);
+        else if (minOverlap == overlapTop) {
+            directionY = -std::abs(directionY);
         }
-        else if (minOverlap == overlapBottom) {              directionY = std::abs(directionY);
+        else if (minOverlap == overlapBottom) {
+            directionY = std::abs(directionY);
         }
 
-        brick.destroy();      }
+        brick.destroy();
+    }
 }
 
 void Ball::move(float deltaTime, sf::RectangleShape& pad, std::vector<Brick>& bricks, Pad& Pad) {
@@ -149,23 +151,24 @@ void Ball::move(float deltaTime, sf::RectangleShape& pad, std::vector<Brick>& br
     wallBounce(Pad);
     padBounce(pad);
 
-    for (auto it = bricks.begin(); it != bricks.end(); /* Pas d'incr�ment ici */) {
+    for (auto it = bricks.begin(); it != bricks.end();) {
         if (it->checkCollision(ballShape)) {
-            brickBounce(*it);  
+            brickBounce(*it);
             it->destroy();
 
             if (!isPiercing) {
-                break;              }
+                break;
+            }
             else {
-                it = bricks.erase(it);                  
+                it = bricks.erase(it);
                 continue;
             }
         }
-        ++it;     }
+        ++it;
+    }
 
     ballShape.setPosition(positionx, positiony);
 }
-
 
 void Ball::setPosition(float posx, float posy) {
     positionx = posx;
@@ -176,7 +179,6 @@ void Ball::setPosition(float posx, float posy) {
 std::pair<float, float> Ball::getPosition() {
     return { positionx, positiony };
 }
-
 
 void Ball::normalizeDirection() {
     float magnitude = std::sqrt(directionX * directionX + directionY * directionY);
