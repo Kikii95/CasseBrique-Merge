@@ -1,7 +1,6 @@
 #pragma once
 #include <iostream>
 #include <SFML/Graphics.hpp> 
-#include "Ball.h"
 #include "Brick.h"
 
 #define SCREEN_WIDTH 3840
@@ -28,14 +27,15 @@ public:
     bool isShieldActive;
     
     void displayPosition();
+    sf::RectangleShape getShape() const;
 
-    void setInvertedControls(bool inverted);
+    /*void setInvertedControls(bool inverted);*/
+    bool loadTexture(const std::string& filePath);
 
 protected:
     sf::Texture padTexture;  
     float positionX, positionY;
     float speed;     int sizeX, sizeY;
-    sf::RectangleShape getShape() const;  // Modifie pour retourner un Pad avec texture
-    bool loadTexture(const std::string& filePath); // Ajoute une m�thode pour charger la texture
+    
 
 };

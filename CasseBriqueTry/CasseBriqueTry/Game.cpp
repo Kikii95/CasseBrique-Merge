@@ -1,7 +1,4 @@
 #include "Game.h"
-#include "BallSpeedBoost.h"
-#include "BallSpeedNerf.h"
-#include "PadSpeedBoost.h"
 #include <memory>
 #include "GameOver.h"
 #include <fstream>
@@ -23,7 +20,7 @@ using json = nlohmann::json;
 Game::Game()
     : window(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "Casse-Brique", sf::Style::Fullscreen),
     hud(SCREEN_WIDTH, SCREEN_HEIGHT, window),
-         isGameOver(false),
+         gameOverScreen(window),
     pad((0.8 * SCREEN_WIDTH), (0.2 * SCREEN_HEIGHT)),
     ball(pad.getPosition().first + pad.getSize().first / 2, pad.getPosition().second - ball.originalSize, ball.originalSpeed, ball.originalSize),
     levelManager(),
@@ -63,24 +60,25 @@ Game::Game()
     std::srand(static_cast<unsigned int>(std::time(nullptr)));
     padShape.setFillColor(sf::Color::Blue);
     Brick::loadTextures(); // Charger toutes les textures de briques une fois au démarrage
-    createInitialBricks();
+    createInitialBricks(7, 14, (SCREEN_WIDTH / 16), (SCREEN_HEIGHT / 27));
 }
 
-void Game::createInitialBricks() {
-    int rows = 3;   // Nombre de lignes de briques
-    int cols = 16;  // Nombre de colonnes de briques pour ajuster la largeur de l'écran
-    int startX = 0; // Position de départ en X
-    int startY = 50; // Position de départ en Y
+void Game::createInitialBricks(int rows, int columns, int brickWidth, int brickHeight) {
+    int totalWidth = columns * brickWidth;
+    int startX = (SCREEN_WIDTH - totalWidth) / 2; 
+    int topOffset = 150;
 
     for (int i = 0; i < rows; ++i) {
-        for (int j = 0; j < cols; ++j) {
-            int xPos = startX + j * 120; // Largeur de chaque brique
-            int yPos = startY + i * 40;  // Hauteur de chaque brique
-            Brick newBrick(xPos, yPos, 120, 40);
+        for (int j = 0; j < columns; ++j) {
+            int xPos = startX + j * brickWidth;
+            int yPos = topOffset + i * brickHeight;
+            Brick newBrick(xPos, yPos, brickWidth, brickHeight);
             bricks.push_back(newBrick);
         }
     }
 }
+
+
 
 
 void Game::loadBricksFromJson() {
@@ -261,87 +259,80 @@ void Game::update(float deltaTime) {
         return;
     }
     if (!isMainMenuActive && !isPaused && !isGameOver) {
+        float moveDirection = /*ball.areControlsReversed() ? -1.0f :*/ 1.0f;
+
         if (isBallLaunched && sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-            pad.moveLeft(deltaTime);
+            if (moveDirection > 0) {
+                pad.moveLeft(deltaTime);
+            }
+            else {
+                pad.moveRight(deltaTime);
+            }
         }
         if (isBallLaunched && sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-            pad.moveRight(deltaTime);
+            if (moveDirection > 0) {
+                pad.moveRight(deltaTime);
+            }
+            else {
+                pad.moveLeft(deltaTime);
+            }
         }
 
-        if (!isBallLaunched && sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
-            float directionX;
-            do {
-                directionX = (static_cast<float>(std::rand()) / RAND_MAX) * 0.8f - 0.4f;
-            } while (std::abs(directionX) < 0.1f);
+        if (!isBallLaunched) {
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
+                float directionX;
+                float directionY = -1.0f;
 
-            float directionY = -1.0f;
+                do {
+                    directionX = (static_cast<float>(std::rand()) / static_cast<float>(RAND_MAX)) * 0.8f - 0.4f;
+                } while (std::abs(directionX) < 0.2f || std::abs(directionX) > 0.4f);
 
-            ball.setDirection(directionX, directionY);
-            isBallLaunched = true;
+                directionY = -std::sqrt(1 - directionX * directionX);
+
+                ball.setDirection(directionX, directionY);
+                isBallLaunched = true;
+            }
         }
-
-        if (isBallLaunched) {
-            ball.move(deltaTime, padShape, bricks);
-        }
-
-        if (ball.getPosition().second > SCREEN_HEIGHT) {
-            --lives;
-
-            if (lives >= 0 && lives < hearts.size()) {
-                hearts[lives].setTexture(heartLostTexture);
+        else {
+            for (auto& ball : activeBalls) {
+                ball.move(deltaTime, padShape, bricks, pad);
             }
 
-            if (lives > 0) {
-                resetBall();
-            }
-            if (lives <= 0) {
-                isGameOver = true;
-            }
+            checkLife();
+            checkVictoryCondition();
         }
 
         padShape.setPosition(pad.getPosition().first, pad.getPosition().second);
 
         for (size_t i = 0; i < bricks.size(); ++i) {
             if (!bricks[i].isBroken() && ball.getShape().getGlobalBounds().intersects(bricks[i].getShape().getGlobalBounds())) {
-                // La brique prend un coup
                 bricks[i].takeHit();
 
-                // Inverse la direction de la balle après un coup
-
                 if (bricks[i].isDestroyed()) {
-                    // Applique un effet aléatoire et met à jour le score
-                    int randomEffectIndex = rand() % 3;
+                    int randomEffectIndex = rand() % 22;
                     applyEffect(randomEffectIndex);
                     hud.updateScore(10);
-
-                    // Supprime la brique si elle est complètement cassée
                     bricks.erase(bricks.begin() + i);
-                    i--; // Ajuste l'index pour éviter de sauter la brique suivante
+                    i--;
+                    break;
                 }
-                break; // Quitte la boucle car une seule collision par mise à jour est gérée
+                break; 
             }
         }
-
-        // Mettre à jour les effets actifs sur la balle
         for (auto& effect : activeBallEffects) {
             effect->update(deltaTime);
         }
 
-        // Supprimer les effets inactifs
         activeBallEffects.erase(
             std::remove_if(
                 activeBallEffects.begin(),
                 activeBallEffects.end(),
-                [](std::unique_ptr<BallEffect>& effect) { return !effect->isEffectActive(); }
+                [](const std::unique_ptr<BallEffect>& effect) {
+                    return !effect->isEffectActive();
+                }
             ),
             activeBallEffects.end()
         );
-
-        // Déterminer si des effets sont actifs
-        bool hasActiveEffect = !activeBallEffects.empty();
-        if (!hasActiveEffect) {
-            ball.getShape().setFillColor(sf::Color::White);
-        }
     }
 }
 
@@ -349,54 +340,6 @@ void Game::update(float deltaTime) {
 void Game::updateLevelEditor() {
     levelGenerator.drawGrid(window);
 }
-
-void Game::render() {
-    window.clear();
-
-
-    if (isLevelEditorActive) {
-        // Mode éditeur : affiche un fond noir sans appliquer de shader
-        window.clear(sf::Color::Black);
-        levelGenerator.drawGrid(window);  // Affiche le quadrillage
-    }else{
-    // Met à jour le temps pour le shader
-    // Met à jour `iTime` à chaque frame
-    backgroundShader.setUniform("iTime", clock.getElapsedTime().asSeconds());
-    //std::cout << "Temps passé : " << clock.getElapsedTime().asSeconds() << std::endl;
-    sf::Vector2f resolution(window.getSize());
-    backgroundShader.setUniform("iResolution", sf::Glsl::Vec2(1920.0f, 1080.0f));
-
-    sf::RectangleShape background(sf::Vector2f(resolution.x, resolution.y));
-    background.setPosition(0, 0);
-    window.draw(background, &backgroundShader);
-
-
-    // Affichage des autres éléments de l'interface
-    if (isMainMenuActive) {
-        hud.draw(window, isMainMenuActive);
-    }
-    else if (isGameActive) {
-        hud.draw(window, isMainMenuActive);
-        for (auto& heart : hearts) {
-            window.draw(heart);
-        }
-        window.draw(ball.getShape());
-        window.draw(pad.getShape());
-        for (Brick& brick : bricks) {
-            if (!brick.isBroken()) {
-                window.draw(brick.getShape());
-            }
-        }
-    }
-    else if (isGameOver) {
-        gameOverScreen.display();
-    }
-
-    window.display();
-    }
-}
-
-
 
 
 
@@ -424,19 +367,7 @@ void Game::initializeLevelManager() {
     levelManager.initializeLevel(levelManager.getCurrentLevel(), pad, ball, bricks);
 }
 
-void Game::resetBall() {
-    ball.setPosition(pad.getPosition().first + pad.getSize().first / 2, pad.getPosition().second - ball.getSize() / 2);
-    ball.getShape().setPosition(ball.getPosition().first, ball.getPosition().second);
-    ball.setSpeed(400);
 
-    float directionX;
-    do {
-        directionX = (static_cast<float>(std::rand()) / RAND_MAX) * 0.8f - 0.4f;
-    } while (std::abs(directionX) < 0.1f);
-
-    ball.setDirection(directionX, -1.0f);
-    isBallLaunched = false;
-}
 
 void Game::saveLevel() {
     int levelNumber = getNextLevelNumber();
@@ -485,82 +416,7 @@ void Game::checkLife() {
 
 
 
-void Game::update(float deltaTime) {
-    if (isGameOver) {
-        return;
-    }
-    if (!isMainMenuActive && !isPaused && !isGameOver) {
-        float moveDirection = /*ball.areControlsReversed() ? -1.0f :*/ 1.0f;
 
-        if (isBallLaunched && sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-            if (moveDirection > 0) {
-                pad.moveLeft(deltaTime);
-            }
-            else {
-                pad.moveRight(deltaTime);
-            }
-        }
-        if (isBallLaunched && sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-            if (moveDirection > 0) {
-                pad.moveRight(deltaTime);
-            }
-            else {
-                pad.moveLeft(deltaTime);
-            }
-        }
-
-        if (!isBallLaunched) {
-                        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
-                float directionX;
-                float directionY = -1.0f; 
-                                
-                do {
-                    directionX = (static_cast<float>(std::rand()) / static_cast<float>(RAND_MAX)) * 0.8f - 0.4f;
-                } while (std::abs(directionX) < 0.2f || std::abs(directionX) > 0.4f);
-
-                directionY = -std::sqrt(1 - directionX * directionX);
-
-                ball.setDirection(directionX, directionY);
-                isBallLaunched = true;
-            }
-        }
-        else {
-                        for (auto& ball : activeBalls) {
-                ball.move(deltaTime, padShape, bricks, pad);
-            }
-
-            checkLife();
-            checkVictoryCondition();
-        }
-
-        padShape.setPosition(pad.getPosition().first, pad.getPosition().second);
-
-        for (size_t i = 0; i < bricks.size(); ++i) {
-            if (bricks[i].isBroken()) {
-                int randomEffectIndex = rand() % 22;
-                applyEffect(randomEffectIndex);
-                hud.updateScore(10);
-                bricks.erase(bricks.begin() + i);
-                break;
-            }
-        }
-        for (auto& effect : activeBallEffects) {
-            effect->update(deltaTime);
-        }
-
-        activeBallEffects.erase(
-            std::remove_if(
-                activeBallEffects.begin(),
-                activeBallEffects.end(),
-                [](const std::unique_ptr<BallEffect>& effect) {
-                    return !effect->isEffectActive();
-                }
-            ),
-            activeBallEffects.end()
-        );
-
-    }
-}
 
 void Game::checkVictoryCondition() {
     bool allBroken = true;
@@ -613,14 +469,10 @@ void Game::applyEffect(int effectIndex) {
         break;
     case 11:         newEffect = std::make_unique<BallSplit>(ball, activeBalls, duration);
         break;
-    /*case 12:         newEffect = std::make_unique<BallExplosive>(ball, bricks, duration);
-        break;
-    case 13:         newEffect = std::make_unique<BallPathPredictor>(ball, window, duration);
-        break;*/
-        std::cout << "Niveau " << levelNumber << " enregistré sous " << fileName << std::endl;
-    }
-    else {
-        std::cerr << "Erreur : impossible de créer le fichier " << fileName << std::endl;
+        /*case 12:         newEffect = std::make_unique<BallExplosive>(ball, bricks, duration);
+            break;
+        case 13:         newEffect = std::make_unique<BallPathPredictor>(ball, window, duration);
+            break;*/
     }
 }
 
@@ -647,46 +499,54 @@ int Game::getNextLevelNumber() {
     return level;
 }
 
-
-  
-
-    bool alreadyActive = false;
-    for (const auto& effect : activeBallEffects) {
-        if (typeid(*effect) == typeid(*newEffect)) {
-            alreadyActive = true;
-            effect->resetDuration();
-            break;
-        }
-    }
-
-    if (newEffect) {
-        newEffect->applyEffect(); 
-        if (newEffect->isEffectActive()) { 
-            activeBallEffects.push_back(std::move(newEffect));
-        }
-    }
-}
-
 void Game::render() {
     window.clear();
 
-    hud.draw(window, isMainMenuActive);
 
-    if (!isMainMenuActive && !isPaused && !isGameOver) {
+    if (isLevelEditorActive) {
+        // Mode éditeur : affiche un fond noir sans appliquer de shader
+        window.clear(sf::Color::Black);
+        levelGenerator.drawGrid(window);  // Affiche le quadrillage
+    }
+    else {
+        // Met à jour le temps pour le shader
+        // Met à jour `iTime` à chaque frame
+        backgroundShader.setUniform("iTime", clock.getElapsedTime().asSeconds());
+        //std::cout << "Temps passé : " << clock.getElapsedTime().asSeconds() << std::endl;
+        sf::Vector2f resolution(window.getSize());
+        backgroundShader.setUniform("iResolution", sf::Glsl::Vec2(1920.0f, 1080.0f));
 
-        for (auto& heart : hearts) {
-            window.draw(heart);
+        sf::RectangleShape background(sf::Vector2f(resolution.x, resolution.y));
+        background.setPosition(0, 0);
+        window.draw(background, &backgroundShader);
+
+
+        // Affichage des autres éléments de l'interface
+        if (isMainMenuActive) {
+            hud.draw(window, isMainMenuActive);
         }
-        window.draw(padShape);
-        for (auto& ball : activeBalls) {
+        else if (isGameActive) {
+            hud.draw(window, isMainMenuActive);
+            for (auto& heart : hearts) {
+                window.draw(heart);
+            }
             window.draw(ball.getShape());
-        }
-        for (Brick& brick : bricks) {
-            if (!brick.isBroken()) {
-                window.draw(brick.getShape());
+            window.draw(pad.getShape());
+            for (auto& ball : activeBalls) {
+                window.draw(ball.getShape());
+            }
+            for (Brick& brick : bricks) {
+                if (!brick.isBroken()) {
+                    window.draw(brick.getShape());
+                }
             }
         }
-                                                    }
+        else if (isGameOver) {
+            gameOverScreen.display();
+        }
 
-    window.display();
+        window.display();
+    }
 }
+
+

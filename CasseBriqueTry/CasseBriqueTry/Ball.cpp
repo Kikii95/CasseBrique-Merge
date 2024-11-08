@@ -157,7 +157,8 @@ void Ball::move(float deltaTime, sf::RectangleShape& pad, std::vector<Brick>& br
             if (!isPiercing) {
                 break;              }
             else {
-                it = bricks.erase(it);                  continue;
+                it = bricks.erase(it);                  
+                continue;
             }
         }
         ++it;     }

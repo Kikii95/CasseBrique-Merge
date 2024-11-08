@@ -133,8 +133,7 @@
     <ClCompile Include="BackgroundShader.cpp" />
     <ClCompile Include="Ball.cpp" />
     <ClCompile Include="BallEffect.cpp" />
-    <ClCompile Include="BallSpeedBoost.cpp" />
-    <ClCompile Include="BallSpeedNerf.cpp" />
+    <ClCompile Include="BallEffectList.cpp" />
     <ClCompile Include="Brick.cpp" />
     <ClCompile Include="BrickTypes.cpp" />
     <ClCompile Include="FileUtils.cpp" />
@@ -148,16 +147,14 @@
     <ClCompile Include="PadEffect.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Pad.cpp" />
-    <ClCompile Include="PadSpeedBoost.cpp" />
-    <ClCompile Include="PadSpeedNerf.cpp" />
+    <ClCompile Include="PadEffectList.cpp" />
     <ClCompile Include="PauseMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BackgroundShader.h" />
     <ClInclude Include="Ball.h" />
     <ClInclude Include="BallEffect.h" />
-    <ClInclude Include="BallSpeedBoost.h" />
-    <ClInclude Include="BallSpeedNerf.h" />
+    <ClInclude Include="BallEffectList.h" />
     <ClInclude Include="Brick.h" />
     <ClInclude Include="BrickTypes.h" />
     <ClInclude Include="FileUtils.h" />
@@ -170,8 +167,7 @@
     <ClInclude Include="Music.h" />
     <ClInclude Include="PadEffect.h" />
     <ClInclude Include="Pad.h" />
-    <ClInclude Include="PadSpeedBoost.h" />
-    <ClInclude Include="PadSpeedNerf.h" />
+    <ClInclude Include="PadEffectList.h" />
     <ClInclude Include="PauseMenu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

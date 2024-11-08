@@ -55,10 +55,10 @@ private:
     void initializeLevelManager();
     void initializeMusic();
     void update(float deltaTime);
-    void createInitialBricks();
+    void createInitialBricks(int rows, int columns, int brickWidth, int brickHeight);
     void checkVictoryCondition();
     void render();
-    
+    void loadBricksFromJson();
     void updateLevelEditor();
     void saveLevel();
     int getNextLevelNumber() ;
@@ -75,6 +75,7 @@ private:
     GameOver gameOverScreen;
     sf::Event event;
     LevelManager levelManager;
+    sf::Shader backgroundShader;
     sf::RectangleShape background;
     std::vector<Ball> activeBalls;
     LevelGenerator levelGenerator;

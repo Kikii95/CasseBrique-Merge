@@ -17,7 +17,9 @@ public:
     bool checkCollision(const sf::Shape& other); // V�rifie la collision avec un objet g�n�rique
     void destroy();                     // Marque la brique comme cass�e
 
-    // M�thodes pour obtenir la position et la taille
+    sf::RectangleShape getShape();
+    sf::FloatRect getBounds() const;
+
     float getPositionX() const;
     float getPositionY() const;
     float getSizeX() const;

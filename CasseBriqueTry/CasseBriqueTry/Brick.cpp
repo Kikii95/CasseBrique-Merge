@@ -19,6 +19,17 @@ Brick::Brick(int x, int y, int width, int height)
     shape.setTexture(&normalTextures[textureIndex]);
 }
 
+sf::FloatRect Brick::getBounds() const {
+    return shape.getGlobalBounds();
+}
+
+sf::RectangleShape Brick::getShape() {
+    if (isDestroyed()) {
+        return sf::RectangleShape();
+    }
+    return shape;
+}
+
 // Charge les textures des briques (normales et endommag�es)
 void Brick::loadTextures() {
     normalTextures.clear();
