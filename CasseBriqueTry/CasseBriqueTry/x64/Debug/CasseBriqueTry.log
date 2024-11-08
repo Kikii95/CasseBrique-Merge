@@ -1,1 +1,181 @@
-﻿  CasseBriqueTry.vcxproj -> C:\Users\Remy\Documents\GitHub\lyo-t2-amiga-p2-10\CasseBriqueTry\x64\Debug\CasseBriqueTry.exe
+﻿  BackgroundShader.cpp
+  Ball.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(8,30): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(9,40): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(9,30): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(18,13): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(22,12): warning C4244: 'return' : conversion de 'float' en 'int', perte possible de données
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16): warning C4244: 'initialisation' : conversion de 'float' en '_Ty1', perte possible de données
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16): warning C4244:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16): warning C4244:             _Ty1=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16): warning C4244:         ]
+  (compiler le fichier source 'Ball.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16):
+  le contexte d’instanciation du modèle (le plus ancien) est
+  	C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(46,5):
+  	voir la référence à l'instanciation de la fonction modèle 'std::pair<int,int>::pair<float&,float&,0>(_Other1,_Other2) noexcept' en cours de compilation
+          with
+          [
+              _Other1=float &,
+              _Other2=float &
+          ]
+  		C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(46,5):
+  		voir la première référence à « std::pair<int,int>::pair » dans « Ball::getDirection »
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,54): warning C4244: 'initialisation' : conversion de 'float' en '_Ty2', perte possible de données
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,54): warning C4244:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,54): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,54): warning C4244:             _Ty2=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,54): warning C4244:         ]
+  (compiler le fichier source 'Ball.cpp')
+  
+  BallEffect.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffect.cpp(7,21): warning C4244: '-=' : conversion de 'float' en 'int', perte possible de données
+  BallSpeedBoost.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallSpeedBoost.cpp(4,145): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallSpeedBoost.cpp(7,19): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallSpeedBoost.cpp(9,35): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallSpeedBoost.cpp(15,19): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+  BallSpeedNerf.cpp
+  Brick.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,39): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,39): warning C4244:         with
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,39): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,39): warning C4244:             T=float
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,39): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,32): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,32): warning C4244:         with
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,32): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,32): warning C4244:             T=float
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,32): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(15,26): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(15,23): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(53,32): warning C4267: '=' : conversion de 'size_t' en 'int', perte possible de données
+  BrickTypes.cpp
+  FileUtils.cpp
+  Game.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(4,1): warning C4005: 'SCREEN_WIDTH' : redéfinition de macro
+  (compiler le fichier source 'Game.cpp')
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\MainMenu.h(4,1):
+  voir la définition précédente de 'SCREEN_WIDTH'
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(5,1): warning C4005: 'SCREEN_HEIGHT' : redéfinition de macro
+  (compiler le fichier source 'Game.cpp')
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\MainMenu.h(5,1):
+  voir la définition précédente de 'SCREEN_HEIGHT'
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.h(7,1): warning C4005: 'SCREEN_WIDTH' : redéfinition de macro
+  (compiler le fichier source 'Game.cpp')
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(4,1):
+  voir la définition précédente de 'SCREEN_WIDTH'
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.h(8,1): warning C4005: 'SCREEN_HEIGHT' : redéfinition de macro
+  (compiler le fichier source 'Game.cpp')
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(5,1):
+  voir la définition précédente de 'SCREEN_HEIGHT'
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,61): warning C4244: 'argument' : conversion de '_Ty2' en 'T', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,61): warning C4244:         with
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,61): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,61): warning C4244:             _Ty2=int
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,61): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,61): warning C4244:         and
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,61): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,61): warning C4244:             T=float
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,61): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,40): warning C4244: 'argument' : conversion de '_Ty1' en 'T', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,40): warning C4244:         with
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,40): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,40): warning C4244:             _Ty1=int
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,40): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,40): warning C4244:         and
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,40): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,40): warning C4244:             T=float
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,40): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(26,36): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(27,133): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+  GameOver.cpp
+  Hud.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(4,1): warning C4005: 'SCREEN_WIDTH' : redéfinition de macro
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\MainMenu.h(4,1):
+  voir la définition précédente de 'SCREEN_WIDTH'
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(5,1): warning C4005: 'SCREEN_HEIGHT' : redéfinition de macro
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\MainMenu.h(5,1):
+  voir la définition précédente de 'SCREEN_HEIGHT'
+  
+  LevelGenerator.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(46,58): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(46,58): warning C4244:         with
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(46,58): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(46,58): warning C4244:             T=unsigned int
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(46,58): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(46,58): warning C4244:         and
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(46,58): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(46,58): warning C4244:             T=float
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(46,58): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(49,23): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(50,29): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(54,50): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(54,50): warning C4244:         with
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(54,50): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(54,50): warning C4244:             T=unsigned int
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(54,50): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(54,50): warning C4244:         and
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(54,50): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(54,50): warning C4244:             T=float
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(54,50): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(55,23): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(56,26): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+  LevelManager.cpp
+  MainMenu.cpp
+  Music.cpp
+  PadEffect.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(6,21): warning C4244: '-=' : conversion de 'float' en 'int', perte possible de données
+  main.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(4,1): warning C4005: 'SCREEN_WIDTH' : redéfinition de macro
+  (compiler le fichier source 'main.cpp')
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.h(7,1):
+  voir la définition précédente de 'SCREEN_WIDTH'
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(5,1): warning C4005: 'SCREEN_HEIGHT' : redéfinition de macro
+  (compiler le fichier source 'main.cpp')
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.h(8,1):
+  voir la définition précédente de 'SCREEN_HEIGHT'
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.h(18,1): warning C4005: 'SCREEN_WIDTH' : redéfinition de macro
+  (compiler le fichier source 'main.cpp')
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(4,1):
+  voir la définition précédente de 'SCREEN_WIDTH'
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.h(19,1): warning C4005: 'SCREEN_HEIGHT' : redéfinition de macro
+  (compiler le fichier source 'main.cpp')
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(5,1):
+  voir la définition précédente de 'SCREEN_HEIGHT'
+  
+  Pad.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(5,16): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(26,68): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(56,50): warning C4244: 'argument' : conversion de 'const int' en 'T', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(56,50): warning C4244:         with
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(56,50): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(56,50): warning C4244:             T=float
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(56,50): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(56,43): warning C4244: 'argument' : conversion de 'const int' en 'T', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(56,43): warning C4244:         with
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(56,43): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(56,43): warning C4244:             T=float
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(56,43): warning C4244:         ]
+  PadSpeedBoost.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadSpeedBoost.cpp(8,33): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+  PadSpeedNerf.cpp
+  Génération de code en cours...
+  Compilation en cours...
+  PauseMenu.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.cpp(77,25): warning C4267: '=' : conversion de 'size_t' en 'int', perte possible de données
+  Génération de code en cours...
+  CasseBriqueTry.vcxproj -> C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\x64\Debug\CasseBriqueTry.exe

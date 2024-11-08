@@ -5,7 +5,7 @@
 #include "Pad.h"
 #include "Ball.h"
 #include <SFML/Graphics.hpp>
-#include "json.hpp" // Inclure la bibliothèque JSON
+#include "json.hpp" // Inclure la bibliothï¿½que JSON
 using json = nlohmann::json;
 
 enum LevelType {
@@ -17,7 +17,7 @@ enum LevelType {
 class LevelManager {
 public:
     LevelManager();
-    bool selectLevel(sf::RenderWindow& window, LevelType level);  // Sélectionne le niveau
+    bool selectLevel(sf::RenderWindow& window, LevelType level);  // Sï¿½lectionne le niveau
     void initializeLevel(LevelType level, Pad& pad, Ball& ball, std::vector<Brick>& bricks);
     void renderLevel(sf::RenderWindow& window, Pad& pad, Ball& ball, const std::vector<Brick>& bricks);
     LevelType getCurrentLevel() const;

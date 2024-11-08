@@ -29,7 +29,7 @@ void LevelManager::initializeLevel(LevelType level, Pad& pad, Ball& ball, std::v
         }
     }
     else if (level == LevelType::LEVEL_1) {
-        // Initialisez les briques pour le niveau 1 ici si nécessaire
+        // Initialisez les briques pour le niveau 1 ici si nï¿½cessaire
     }
 
     pad.setPosition(0.8f * SCREEN_WIDTH, 0.9f * SCREEN_HEIGHT);
@@ -50,7 +50,7 @@ bool LevelManager::loadLevelFromFile(const std::string& filename, std::vector<Br
     }
 
     file.close();
-    std::cout << "Niveau chargé depuis " << filename << std::endl;
+    std::cout << "Niveau chargï¿½ depuis " << filename << std::endl;
     return true;
 }
 
@@ -62,7 +62,7 @@ void LevelManager::renderLevel(sf::RenderWindow& window, Pad& pad, Ball& ball, c
 
     // Dessiner les briques
     for (const auto& brick : bricks) {
-        if (!brick.isBroken()) {  // isBroken() peut maintenant être appelée sur const Brick
+        if (!brick.isBroken()) {  // isBroken() peut maintenant ï¿½tre appelï¿½e sur const Brick
             window.draw(brick.getShape());
         }
     }

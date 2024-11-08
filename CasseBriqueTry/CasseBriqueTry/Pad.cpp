@@ -1,5 +1,8 @@
 #include "Pad.h"
-#include <algorithm>
+#include <algorithm> 
+
+float Pad::originalSpeed = 500.0f;
+std::pair<int, int> Pad::originalSize = { 0.8 * SCREEN_WIDTH ,0.2 * SCREEN_HEIGHT };
 
 Pad::Pad(float spd, int size)
     : positionX(SCREEN_WIDTH / 2 - size / 2), positionY(SCREEN_HEIGHT - (SCREEN_HEIGHT / 10)), speed(spd), sizeX(size), sizeY(size / 6) {}
@@ -10,7 +13,7 @@ bool Pad::loadTexture(const std::string& filePath) {
         return false;
     }
     else {
-        std::cout << "Texture du pad chargée avec succès depuis " << filePath << std::endl;
+        std::cout << "Texture du pad chargï¿½e avec succï¿½s depuis " << filePath << std::endl;
     }
     return true;
 }
@@ -30,11 +33,12 @@ void Pad::setSpeed(float newSpeed) {
     speed = newSpeed;
 }
 
-float Pad::getSpeed() const {
+float Pad::getSpeed()  {
     return speed;
 }
 
-std::pair<float, float> Pad::getPosition() const {
+
+std::pair<float, float> Pad::getPosition()  {
     return { positionX, positionY };
 }
 
@@ -43,7 +47,7 @@ void Pad::setPosition(float posX, float posY) {
     positionY = posY / 3;
 }
 
-std::pair<int, int> Pad::getSize() const {
+std::pair<int, int> Pad::getSize()  {
     return { sizeX, sizeY };
 }
 

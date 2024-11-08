@@ -9,17 +9,17 @@ std::vector<sf::Texture> Brick::normalTextures;
 std::vector<sf::Texture> Brick::damagedTextures;
 
 Brick::Brick(int x, int y, int width, int height)
-    : hitsRemaining(2) // Chaque brique nécessite 2 coups pour être cassée
+    : hitsRemaining(2) // Chaque brique nï¿½cessite 2 coups pour ï¿½tre cassï¿½e
 {
     shape.setSize(sf::Vector2f(width, height));
     shape.setPosition(x, y);
 
-    // Sélection aléatoire d'une texture parmi les textures normales
+    // Sï¿½lection alï¿½atoire d'une texture parmi les textures normales
     int textureIndex = rand() % 10;
     shape.setTexture(&normalTextures[textureIndex]);
 }
 
-// Charge les textures des briques (normales et endommagées)
+// Charge les textures des briques (normales et endommagï¿½es)
 void Brick::loadTextures() {
     normalTextures.clear();
     damagedTextures.clear();
@@ -41,12 +41,12 @@ void Brick::loadTextures() {
     }
 }
 
-// Fonction pour gérer les coups reçus par la brique
+// Fonction pour gï¿½rer les coups reï¿½us par la brique
 void Brick::takeHit() {
     hitsRemaining--;
 
     if (hitsRemaining == 1) {
-        // Passe à la texture endommagée après le premier coup
+        // Passe ï¿½ la texture endommagï¿½e aprï¿½s le premier coup
         int textureIndex = -1;
         for (size_t i = 0; i < normalTextures.size(); ++i) {
             if (&normalTextures[i] == shape.getTexture()) { // Compare les adresses des textures
@@ -73,7 +73,7 @@ bool Brick::isDestroyed() const {
 }
 
 
-// Méthodes pour obtenir la position et la taille de la brique
+// Mï¿½thodes pour obtenir la position et la taille de la brique
 float Brick::getPositionX() const {
     return shape.getPosition().x;
 }
@@ -90,11 +90,11 @@ float Brick::getSizeY() const {
     return shape.getSize().y;
 }
 
-// Vérifie la collision entre la brique et un autre objet
+// Vï¿½rifie la collision entre la brique et un autre objet
 bool Brick::checkCollision(const sf::Shape& other) {
     return shape.getGlobalBounds().intersects(other.getGlobalBounds());
 }
-// Marque la brique comme cassée
+// Marque la brique comme cassï¿½e
 void Brick::destroy() {
-    hitsRemaining = 0; // Marque la brique comme cassée
+    hitsRemaining = 0; // Marque la brique comme cassï¿½e
 }

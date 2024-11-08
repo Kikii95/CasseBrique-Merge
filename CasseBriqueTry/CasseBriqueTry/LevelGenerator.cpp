@@ -21,10 +21,10 @@ void LevelGenerator::saveLevel() {
     if (levelFile.is_open()) {
         levelFile << levelJson.dump(4); // Sauvegarde avec une indentation
         levelFile.close();
-        std::cout << "Niveau sauvegardé sous " << fileName << std::endl;
+        std::cout << "Niveau sauvegardï¿½ sous " << fileName << std::endl;
     }
     else {
-        std::cerr << "Erreur : impossible de créer le fichier " << fileName << std::endl;
+        std::cerr << "Erreur : impossible de crï¿½er le fichier " << fileName << std::endl;
     }
 }
 
@@ -34,11 +34,11 @@ void LevelGenerator::handleMouseClick(const sf::Vector2i& mousePos) {
     int posX = gridPosition.first;
     int posY = gridPosition.second;
 
-    // Ajoute une brique à cette position
+    // Ajoute une brique ï¿½ cette position
     Brick newBrick(posX, posY, brickWidth, brickHeight);
     bricks.push_back(newBrick);
 
-    std::cout << "Brique ajoutée à la position (" << posX << ", " << posY << ")" << std::endl;
+    std::cout << "Brique ajoutï¿½e ï¿½ la position (" << posX << ", " << posY << ")" << std::endl;
 }
 
 void LevelGenerator::drawGrid(sf::RenderWindow& window) {
@@ -57,7 +57,7 @@ void LevelGenerator::drawGrid(sf::RenderWindow& window) {
         window.draw(line);
     }
 
-    // Dessine toutes les briques placées
+    // Dessine toutes les briques placï¿½es
     for (const auto& brick : bricks) {
         window.draw(brick.getShape());
     }

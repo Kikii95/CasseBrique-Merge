@@ -2,32 +2,35 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 
+#define SCREEN_WIDTH 3840
+#define SCREEN_HEIGHT 2160
+
 class Brick {
 public:
     Brick(int x, int y, int width, int height);
 
-    void takeHit();                     // Gère les coups reçus par la brique
-    bool isBroken() const;              // Vérifie si la brique est complètement cassée
+    void takeHit();                     // Gï¿½re les coups reï¿½us par la brique
+    bool isBroken() const;              // Vï¿½rifie si la brique est complï¿½tement cassï¿½e
     const sf::RectangleShape& getShape() const;
-    static void loadTextures();         // Charge toutes les textures au démarrage
+    static void loadTextures();         // Charge toutes les textures au dï¿½marrage
 
-    bool checkCollision(const sf::Shape& other); // Vérifie la collision avec un objet générique
-    void destroy();                     // Marque la brique comme cassée
+    bool checkCollision(const sf::Shape& other); // Vï¿½rifie la collision avec un objet gï¿½nï¿½rique
+    void destroy();                     // Marque la brique comme cassï¿½e
 
-    // Méthodes pour obtenir la position et la taille
+    // Mï¿½thodes pour obtenir la position et la taille
     float getPositionX() const;
     float getPositionY() const;
     float getSizeX() const;
     float getSizeY() const;
 
-    bool isDestroyed() const; // Ajoute cette méthode pour vérifier si la brique est complètement détruite
+    bool isDestroyed() const; // Ajoute cette mï¿½thode pour vï¿½rifier si la brique est complï¿½tement dï¿½truite
 
 
 
 
 private:
     sf::RectangleShape shape;
-    int hitsRemaining; // Nombre de coups restants pour détruire la brique
+    int hitsRemaining; // Nombre de coups restants pour dï¿½truire la brique
 
     static std::vector<sf::Texture> normalTextures;
     static std::vector<sf::Texture> damagedTextures;
