@@ -4,11 +4,4 @@
     <LocalDebuggerEnvironment>PATH=C:\Users\killi\Downloads\SFML-2.5.1\bin</LocalDebuggerEnvironment>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
-<<<<<<< HEAD
-=======
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <LocalDebuggerEnvironment>PATH=C:\Users\enunes\Documents\SFML-2.6.1\bin</LocalDebuggerEnvironment>
-    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-  </PropertyGroup>
->>>>>>> Eric
 </Project>

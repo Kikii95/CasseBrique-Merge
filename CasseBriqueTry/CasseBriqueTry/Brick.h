@@ -2,7 +2,6 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 
-<<<<<<< HEAD
 #define SCREEN_WIDTH 3840
 #define SCREEN_HEIGHT 2160
 
@@ -37,36 +36,4 @@ private:
 
     static std::vector<sf::Texture> normalTextures;
     static std::vector<sf::Texture> damagedTextures;
-=======
-#define SCREEN_WIDTH 2560
-#define SCREEN_HEIGHT 1440
-
-class Brick {
-private:
-    bool isDestroyed = false;
-    static sf::Texture brickTexture;
-    sf::RectangleShape shape;
-    int positionx;
-    int positiony;
-    int sizex;
-    int sizey;
-
-public:
-    Brick(int x, int y, int sx, int sy);
-
-    void destroy();
-    bool isBroken() ;
-
-    static void loadTexture(const std::string& textureFile); 
-    static std::vector<Brick> createBricks(int rows, int columns, int brickWidth, int brickHeight);
-
-    sf::RectangleShape getShape() ;
-
-    int getPositionX();
-    int getPositionY();
-    int getSizeX();
-    int getSizeY();
-
-    bool checkCollision(sf::CircleShape& ballShape);
->>>>>>> Eric
 };

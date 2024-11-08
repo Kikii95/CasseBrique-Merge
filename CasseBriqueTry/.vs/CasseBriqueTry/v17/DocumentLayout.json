@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Ball.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\Ball.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Pad.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\Pad.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\PadEffect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\PadEffect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\LevelManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\LevelManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\LevelGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -15,57 +27,81 @@
       "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\Brick.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Brick.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\Brick.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\LevelManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\LevelManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Pad.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\Pad.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Pad.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\Pad.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Ball.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\Ball.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\killi\\source\\repos\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\PadEffectList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\PadEffect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\PadEffect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BallEffect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\BallEffect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BallEffect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\BallEffect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Ball.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\Ball.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BackgroundShader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\BackgroundShader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\PauseMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\PauseMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\PadEffect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\PadEffect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\killi\\source\\repos\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\BallEffectList.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Pad.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\Pad.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\LevelManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\LevelManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\LevelGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\LevelGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Hud.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\Hud.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\GameOver.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\GameOver.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BrickTypes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\BrickTypes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Brick.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\Brick.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BallEffectList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\BallEffectList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BallEffect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\BallEffect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Ball.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\Ball.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BackgroundShader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE2D731C-31C5-4C40-8818-1B715AD6A14C}|CasseBriqueTry\\CasseBriqueTry.vcxproj|solutionrelative:CasseBriqueTry\\BackgroundShader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\killi\\source\\repos\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\PadEffectList.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\killi\\source\\repos\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\PadEffectList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\killi\\source\\repos\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\BallEffectList.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\killi\\source\\repos\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\BallEffectList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -78,20 +114,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 410,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Ball.cpp",
               "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Ball.cpp",
               "RelativeDocumentMoniker": "CasseBriqueTry\\Ball.cpp",
               "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Ball.cpp",
               "RelativeToolTip": "CasseBriqueTry\\Ball.cpp",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAkwJ8AAAA4AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJ8AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-08T05:55:16.822Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BackgroundShader.cpp",
+              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BackgroundShader.cpp",
+              "RelativeDocumentMoniker": "CasseBriqueTry\\BackgroundShader.cpp",
+              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BackgroundShader.cpp",
+              "RelativeToolTip": "CasseBriqueTry\\BackgroundShader.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-08T14:34:02.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PauseMenu.h",
+              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\PauseMenu.h",
+              "RelativeDocumentMoniker": "CasseBriqueTry\\PauseMenu.h",
+              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\PauseMenu.h",
+              "RelativeToolTip": "CasseBriqueTry\\PauseMenu.h",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-08T14:26:04.576Z",
               "EditorCaption": ""
             },
             {
@@ -100,33 +162,189 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LevelGenerator.cpp",
-              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\LevelGenerator.cpp",
-              "RelativeDocumentMoniker": "CasseBriqueTry\\LevelGenerator.cpp",
-              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\LevelGenerator.cpp",
-              "RelativeToolTip": "CasseBriqueTry\\LevelGenerator.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-08T13:17:39.275Z",
+              "DocumentIndex": 11,
+              "Title": "Pad.h",
+              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Pad.h",
+              "RelativeDocumentMoniker": "CasseBriqueTry\\Pad.h",
+              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Pad.h",
+              "RelativeToolTip": "CasseBriqueTry\\Pad.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-08T05:54:44.301Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
+              "Title": "PadEffect.h",
+              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\PadEffect.h",
+              "RelativeDocumentMoniker": "CasseBriqueTry\\PadEffect.h",
+              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\PadEffect.h",
+              "RelativeToolTip": "CasseBriqueTry\\PadEffect.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-08T05:41:40.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BallEffect.cpp",
+              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BallEffect.cpp",
+              "RelativeDocumentMoniker": "CasseBriqueTry\\BallEffect.cpp",
+              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BallEffect.cpp",
+              "RelativeToolTip": "CasseBriqueTry\\BallEffect.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-08T01:50:08.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Brick.cpp",
               "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Brick.cpp",
               "RelativeDocumentMoniker": "CasseBriqueTry\\Brick.cpp",
               "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Brick.cpp",
               "RelativeToolTip": "CasseBriqueTry\\Brick.cpp",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAADQAAAABAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-08T13:11:24.09Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game.cpp",
+              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Game.cpp",
+              "RelativeDocumentMoniker": "CasseBriqueTry\\Game.cpp",
+              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Game.cpp",
+              "RelativeToolTip": "CasseBriqueTry\\Game.cpp",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAAHwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-06T14:35:29.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LevelGenerator.cpp",
+              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\LevelGenerator.cpp",
+              "RelativeDocumentMoniker": "CasseBriqueTry\\LevelGenerator.cpp",
+              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\LevelGenerator.cpp",
+              "RelativeToolTip": "CasseBriqueTry\\LevelGenerator.cpp",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAA4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-08T13:17:39.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "LevelManager.cpp",
+              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\LevelManager.cpp",
+              "RelativeDocumentMoniker": "CasseBriqueTry\\LevelManager.cpp",
+              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\LevelManager.cpp",
+              "RelativeToolTip": "CasseBriqueTry\\LevelManager.cpp",
+              "ViewState": "AQIAACIAAAAAAAAAAAAhwDsAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-08T06:45:23.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pad.cpp",
+              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Pad.cpp",
+              "RelativeDocumentMoniker": "CasseBriqueTry\\Pad.cpp",
+              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Pad.cpp",
+              "RelativeToolTip": "CasseBriqueTry\\Pad.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-08T05:54:27.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PadEffect.cpp",
+              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\PadEffect.cpp",
+              "RelativeDocumentMoniker": "CasseBriqueTry\\PadEffect.cpp",
+              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\PadEffect.cpp",
+              "RelativeToolTip": "CasseBriqueTry\\PadEffect.cpp",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAB0AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-08T05:38:26.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LevelManager.h",
+              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\LevelManager.h",
+              "RelativeDocumentMoniker": "CasseBriqueTry\\LevelManager.h",
+              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\LevelManager.h",
+              "RelativeToolTip": "CasseBriqueTry\\LevelManager.h",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-08T14:32:09.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LevelGenerator.h",
+              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\LevelGenerator.h",
+              "RelativeDocumentMoniker": "CasseBriqueTry\\LevelGenerator.h",
+              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\LevelGenerator.h",
+              "RelativeToolTip": "CasseBriqueTry\\LevelGenerator.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-08T14:31:50.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Hud.h",
+              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Hud.h",
+              "RelativeDocumentMoniker": "CasseBriqueTry\\Hud.h",
+              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Hud.h",
+              "RelativeToolTip": "CasseBriqueTry\\Hud.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-08T14:30:55.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GameOver.h",
+              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\GameOver.h",
+              "RelativeDocumentMoniker": "CasseBriqueTry\\GameOver.h",
+              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\GameOver.h",
+              "RelativeToolTip": "CasseBriqueTry\\GameOver.h",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-08T14:30:55.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BrickTypes.h",
+              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BrickTypes.h",
+              "RelativeDocumentMoniker": "CasseBriqueTry\\BrickTypes.h",
+              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BrickTypes.h",
+              "RelativeToolTip": "CasseBriqueTry\\BrickTypes.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-08T14:30:44.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Brick.h",
               "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Brick.h",
               "RelativeDocumentMoniker": "CasseBriqueTry\\Brick.h",
@@ -139,19 +357,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
+              "Title": "BallEffectList.h",
+              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BallEffectList.h",
+              "RelativeDocumentMoniker": "CasseBriqueTry\\BallEffectList.h",
+              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BallEffectList.h",
+              "RelativeToolTip": "CasseBriqueTry\\BallEffectList.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-08T14:28:58.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BackgroundShader.h",
+              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BackgroundShader.h",
+              "RelativeDocumentMoniker": "CasseBriqueTry\\BackgroundShader.h",
+              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BackgroundShader.h",
+              "RelativeToolTip": "CasseBriqueTry\\BackgroundShader.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-08T14:28:52.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "PadEffectList.cpp",
               "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\PadEffectList.cpp",
               "RelativeDocumentMoniker": "..\\..\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\PadEffectList.cpp",
               "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\PadEffectList.cpp",
               "RelativeToolTip": "..\\..\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\PadEffectList.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAA8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-08T05:43:59.339Z"
+              "WhenOpened": "2024-11-08T05:43:59.339Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 21,
               "Title": "Ball.h",
               "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Ball.h",
               "RelativeDocumentMoniker": "CasseBriqueTry\\Ball.h",
@@ -164,79 +409,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Pad.cpp",
-              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Pad.cpp",
-              "RelativeDocumentMoniker": "CasseBriqueTry\\Pad.cpp",
-              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Pad.cpp",
-              "RelativeToolTip": "CasseBriqueTry\\Pad.cpp",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAAADoAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-08T05:54:27.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Game.cpp",
-              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Game.cpp",
-              "RelativeDocumentMoniker": "CasseBriqueTry\\Game.cpp",
-              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Game.cpp",
-              "RelativeToolTip": "CasseBriqueTry\\Game.cpp",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAAEwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-06T14:35:29.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "Game.h",
               "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Game.h",
               "RelativeDocumentMoniker": "CasseBriqueTry\\Game.h",
               "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Game.h",
               "RelativeToolTip": "CasseBriqueTry\\Game.h",
-              "ViewState": "AQIAACAAAAAAAAAAAAAuwDkAAAAcAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAuwDkAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-06T16:13:59.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PadEffectList.h",
-              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\PadEffectList.h",
-              "RelativeDocumentMoniker": "..\\..\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\PadEffectList.h",
-              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\PadEffectList.h",
-              "RelativeToolTip": "..\\..\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\PadEffectList.h",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB0AAAAAAAAA",
+              "DocumentIndex": 20,
+              "Title": "BallEffect.h",
+              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BallEffect.h",
+              "RelativeDocumentMoniker": "CasseBriqueTry\\BallEffect.h",
+              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BallEffect.h",
+              "RelativeToolTip": "CasseBriqueTry\\BallEffect.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-08T05:43:39.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "BallEffect.cpp",
-              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BallEffect.cpp",
-              "RelativeDocumentMoniker": "CasseBriqueTry\\BallEffect.cpp",
-              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BallEffect.cpp",
-              "RelativeToolTip": "CasseBriqueTry\\BallEffect.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-08T01:50:08.385Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LevelManager.cpp",
-              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\LevelManager.cpp",
-              "RelativeDocumentMoniker": "CasseBriqueTry\\LevelManager.cpp",
-              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\LevelManager.cpp",
-              "RelativeToolTip": "CasseBriqueTry\\LevelManager.cpp",
-              "ViewState": "AQIAACIAAAAAAAAAAAAhwDsAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-08T06:45:23.024Z",
+              "WhenOpened": "2024-11-08T03:21:38.546Z",
               "EditorCaption": ""
             },
             {
@@ -245,44 +439,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "BallEffect.h",
-              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BallEffect.h",
-              "RelativeDocumentMoniker": "CasseBriqueTry\\BallEffect.h",
-              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\BallEffect.h",
-              "RelativeToolTip": "CasseBriqueTry\\BallEffect.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAAAAAA",
+              "DocumentIndex": 24,
+              "Title": "PadEffectList.h",
+              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\PadEffectList.h",
+              "RelativeDocumentMoniker": "..\\..\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\PadEffectList.h",
+              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\PadEffectList.h",
+              "RelativeToolTip": "..\\..\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\PadEffectList.h",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-08T03:21:38.546Z"
+              "WhenOpened": "2024-11-08T05:43:39.509Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PadEffect.cpp",
-              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\PadEffect.cpp",
-              "RelativeDocumentMoniker": "CasseBriqueTry\\PadEffect.cpp",
-              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\PadEffect.cpp",
-              "RelativeToolTip": "CasseBriqueTry\\PadEffect.cpp",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAkwC0AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-08T05:38:26.734Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Pad.h",
-              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Pad.h",
-              "RelativeDocumentMoniker": "CasseBriqueTry\\Pad.h",
-              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\Pad.h",
-              "RelativeToolTip": "CasseBriqueTry\\Pad.h",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAACUAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-08T05:54:44.301Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 25,
               "Title": "BallEffectList.cpp",
               "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\BallEffectList.cpp",
               "RelativeDocumentMoniker": "..\\..\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\BallEffectList.cpp",
@@ -294,19 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "PadEffect.h",
-              "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\PadEffect.h",
-              "RelativeDocumentMoniker": "CasseBriqueTry\\PadEffect.h",
-              "ToolTip": "C:\\Users\\killi\\source\\repos\\CasseBrique-Merge\\CasseBriqueTry\\CasseBriqueTry\\PadEffect.h",
-              "RelativeToolTip": "CasseBriqueTry\\PadEffect.h",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAC0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-08T05:41:40.867Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 26,
               "Title": "BallEffectList.h",
               "DocumentMoniker": "C:\\Users\\killi\\source\\repos\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\BallEffectList.h",
               "RelativeDocumentMoniker": "..\\..\\CasseBrique-Perso\\CasseBriqueTry\\CasseBriqueTry\\BallEffectList.h",

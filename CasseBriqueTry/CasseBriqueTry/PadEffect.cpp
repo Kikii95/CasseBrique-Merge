@@ -1,7 +1,7 @@
 #include "PadEffect.h"
 #include <iostream>
 
-<<<<<<< HEAD
+
 PadEffect::PadEffect(PadEffectType type, Pad& pad, int duration,
     std::function<void(Pad&)> applyCallback,
     std::function<void(Pad&)> removeCallback)
@@ -22,18 +22,13 @@ void PadEffect::removeEffect() {
     }
 }
 
-=======
->>>>>>> Eric
+
 void PadEffect::update(float deltaTime) {
     if (isActive && duration > 0) {
         duration -= deltaTime;
         if (duration <= 0) {
-<<<<<<< HEAD
             removeEffect();
-=======
-            isActive = false;
-            removePadEffect();
->>>>>>> Eric
+
         }
     }
 }

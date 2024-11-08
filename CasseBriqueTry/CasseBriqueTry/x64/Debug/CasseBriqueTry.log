@@ -1,45 +1,12 @@
-<<<<<<< HEAD
-﻿  Brick.cpp
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,39): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,39): warning C4244:         with
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,39): warning C4244:         [
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,39): warning C4244:             T=float
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,39): warning C4244:         ]
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,32): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,32): warning C4244:         with
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,32): warning C4244:         [
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,32): warning C4244:             T=float
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(14,32): warning C4244:         ]
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(15,26): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(15,23): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(64,32): warning C4267: '=' : conversion de 'size_t' en 'int', perte possible de données
-=======
 ﻿  Ball.cpp
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(8,30): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(9,40): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(9,30): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(18,13): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(22,12): warning C4244: 'return' : conversion de 'float' en 'int', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,115): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,115): warning C4244:         with
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,115): warning C4244:         [
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,115): warning C4244:             T=float
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,115): warning C4244:         ]
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,97): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,97): warning C4244:         with
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,97): warning C4244:         [
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,97): warning C4244:             T=float
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,97): warning C4244:         ]
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,79): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,79): warning C4244:         with
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,79): warning C4244:         [
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,79): warning C4244:             T=float
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,79): warning C4244:         ]
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,57): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,57): warning C4244:         with
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,57): warning C4244:         [
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,57): warning C4244:             T=float
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(74,57): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(10,30): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(11,40): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(11,30): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(20,13): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(24,12): warning C4244: 'return' : conversion de 'float' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(37,30): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(38,40): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(38,30): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16): warning C4244: 'initialisation' : conversion de 'float' en '_Ty1', perte possible de données
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16): warning C4244:         with
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16): warning C4244:         [
@@ -48,14 +15,14 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.3351
   (compiler le fichier source 'Ball.cpp')
   C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16):
   le contexte d’instanciation du modèle (le plus ancien) est
-  	C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(46,5):
+  	C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(75,5):
   	voir la référence à l'instanciation de la fonction modèle 'std::pair<int,int>::pair<float&,float&,0>(_Other1,_Other2) noexcept' en cours de compilation
           with
           [
               _Other1=float &,
               _Other2=float &
           ]
-  		C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(46,5):
+  		C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp(75,5):
   		voir la première référence à « std::pair<int,int>::pair » dans « Ball::getDirection »
   
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,54): warning C4244: 'initialisation' : conversion de 'float' en '_Ty2', perte possible de données
@@ -66,73 +33,964 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.3351
   (compiler le fichier source 'Ball.cpp')
   
   BallEffect.cpp
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffect.cpp(7,21): warning C4244: '-=' : conversion de 'float' en 'int', perte possible de données
-  BallSpeedBoost.cpp
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallSpeedBoost.cpp(3,145): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallSpeedBoost.cpp(6,19): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallSpeedBoost.cpp(8,35): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallSpeedBoost.cpp(14,19): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
-  BallSpeedNerf.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffect.cpp(31,21): warning C4244: '-=' : conversion de 'float' en 'int', perte possible de données
+  BallEffectList.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp(8,50): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp(14,36): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp(27,50): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp(33,36): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp(46,48): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp(52,35): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp(67,48): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp(73,35): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp(223,37): warning C4244: 'initialisation' : conversion de '_Ty1' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp(223,37): warning C4244:         with
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp(223,37): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp(223,37): warning C4244:             _Ty1=int
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp(223,37): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp(224,37): warning C4244: 'initialisation' : conversion de '_Ty2' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp(224,37): warning C4244:         with
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp(224,37): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp(224,37): warning C4244:             _Ty2=int
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp(224,37): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp(226,86): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
   Brick.cpp
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(10,40): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(10,40): warning C4244:         with
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(10,40): warning C4244:         [
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(10,40): warning C4244:             T=float
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(10,40): warning C4244:         ]
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(10,33): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(10,33): warning C4244:         with
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(10,33): warning C4244:         [
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(10,33): warning C4244:             T=float
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(10,33): warning C4244:         ]
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(11,35): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(11,24): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(57,55): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(57,55): warning C4244:         with
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(57,55): warning C4244:         [
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(57,55): warning C4244:             T=float
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(57,55): warning C4244:         ]
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(57,48): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(57,48): warning C4244:         with
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(57,48): warning C4244:         [
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(57,48): warning C4244:             T=float
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(57,48): warning C4244:         ]
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(58,39): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(58,28): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp(1,1): error C2059: erreur de syntaxe : '<<'
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\Config.hpp(207,1): error C2143: erreur de syntaxe : absence de ';' avant '{'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\Config.hpp(207,1): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(70,11): error C3646: 'asMilliseconds' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(70,25): error C2059: erreur de syntaxe : '('
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(70,33): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(80,11): error C3646: 'asMicroseconds' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(80,25): error C2059: erreur de syntaxe : '('
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(80,33): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(90,46): error C2061: erreur de syntaxe : identificateur 'Int32'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(91,46): error C2061: erreur de syntaxe : identificateur 'Int64'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(102,19): error C2061: erreur de syntaxe : identificateur 'Int64'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(102,5): error C2535: 'sf::Time::Time(void)' : fonction membre déjà définie ou déclarée
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(50,5):
+  voir la déclaration de 'sf::Time::Time'
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(109,11): error C3646: 'm_microseconds' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(109,25): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(136,22): error C2365: 'sf::milliseconds' : redéfinition ; la précédente définition était 'fonction'
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(90,33):
+  voir la déclaration de 'sf::milliseconds'
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(136,35): error C2065: 'Int32' : identificateur non déclaré
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(136,41): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur 'amount'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(149,22): error C2365: 'sf::microseconds' : redéfinition ; la précédente définition était 'fonction'
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(91,33):
+  voir la déclaration de 'sf::microseconds'
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(149,35): error C2065: 'Int64' : identificateur non déclaré
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(149,41): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur 'amount'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(304,44): error C2061: erreur de syntaxe : identificateur 'Int64'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(328,22): error C2473: 'operator *' : similaire à une définition de fonction, mais aucune liste de paramètres.
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(328,22): error C2365: 'sf::operator *' : redéfinition ; la précédente définition était 'fonction'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(328,33): error C2065: 'Int64' : identificateur non déclaré
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(328,39): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur 'left'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(352,47): error C2061: erreur de syntaxe : identificateur 'Int64'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(352,23): error C2805: nombre de paramètres insuffisant pour l'opérateur binaire 'operator *='
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(376,44): error C2061: erreur de syntaxe : identificateur 'Int64'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(376,22): error C2805: nombre de paramètres insuffisant pour l'opérateur binaire 'operator /'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(400,47): error C2061: erreur de syntaxe : identificateur 'Int64'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(400,23): error C2805: nombre de paramètres insuffisant pour l'opérateur binaire 'operator /='
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(63,19): error C3646: 'read' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(63,24): error C2062: type 'void' inattendu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(63,51): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(73,19): error C3646: 'seek' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(73,24): error C2065: 'Int64' : identificateur non déclaré
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(73,30): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur 'position'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(73,43): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(81,19): error C3646: 'tell' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(81,24): error C2059: erreur de syntaxe : ')'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(81,29): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(89,19): error C3646: 'getSize' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(89,27): error C2059: erreur de syntaxe : ')'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(89,32): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(92,19): error C3646: 'read' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(92,24): error C2062: type 'void' inattendu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(92,47): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(102,19): error C3646: 'seek' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(102,24): error C2065: 'Int64' : identificateur non déclaré
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(102,30): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur 'position'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(102,39): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(110,19): error C3646: 'tell' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(110,24): error C2059: erreur de syntaxe : ')'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(110,25): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(118,19): error C3646: 'getSize' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(118,27): error C2059: erreur de syntaxe : ')'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(118,28): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(74,19): error C3646: 'read' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(74,24): error C2062: type 'void' inattendu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(74,47): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(84,19): error C3646: 'seek' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(84,24): error C2065: 'Int64' : identificateur non déclaré
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(84,30): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur 'position'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(84,39): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(92,19): error C3646: 'tell' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(92,24): error C2059: erreur de syntaxe : ')'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(92,25): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(100,19): error C3646: 'getSize' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(100,27): error C2059: erreur de syntaxe : ')'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(100,28): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(108,17): error C3646: 'm_size' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(108,23): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(109,17): error C3646: 'm_offset' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(109,25): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,40): error C2061: erreur de syntaxe : identificateur 'Uint32'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(83,23): error C2061: erreur de syntaxe : identificateur 'Uint32'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(274,40): error C2061: erreur de syntaxe : identificateur 'Uint32'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(290,23): error C2061: erreur de syntaxe : identificateur 'Uint32'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(482,40): error C2061: erreur de syntaxe : identificateur 'Uint32'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(499,23): error C2061: erreur de syntaxe : identificateur 'Uint32'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(678,5): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(678,19): error C2061: erreur de syntaxe : identificateur 'decodeAnsi'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(678,82): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(693,5): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(693,19): error C2061: erreur de syntaxe : identificateur 'decodeWide'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(693,39): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(711,27): error C2061: erreur de syntaxe : identificateur 'Uint32'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(728,27): error C2061: erreur de syntaxe : identificateur 'Uint32'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(39,37): error C2061: erreur de syntaxe : identificateur 'Uint32'
+  (compiler le fichier source 'Brick.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(53,18): error C2187: erreur de syntaxe : 'Uint32' inattendu ici
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(53,25): error C2065: 'offsets' : identificateur non déclaré
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(59,46): error C2065: 'Uint8' : identificateur non déclaré
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(59,46): error C2187: erreur de syntaxe : 'Uint8' inattendu ici
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(59,60): error C2760: erreur de syntaxe : ']' était inattendu ici; ';' attendu
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(59,60): error C3878: erreur de syntaxe : jeton inattendu ']' après 'expression_statement'
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(59,60): message : erreur de récupération ignorée : « ] »
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(62,9): error C2065: 'output' : identificateur non déclaré
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,21): error C2065: 'output' : identificateur non déclaré
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,43): error C2065: 'Uint8' : identificateur non déclaré
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,43): error C2187: erreur de syntaxe : 'Uint8' inattendu ici
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,48): error C3878: erreur de syntaxe : jeton inattendu '>' après 'expression'
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,48): message : erreur de récupération ignorée : « > ( *  . . . ++ »
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,58): error C2760: erreur de syntaxe : ')' était inattendu ici; ';' attendu
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,58): error C3878: erreur de syntaxe : jeton inattendu ')' après 'expression_statement'
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,58): error C3878: erreur de syntaxe : jeton inattendu ')' après 'statement'
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,58): error C3878: erreur de syntaxe : jeton inattendu ')' après 'labeled_statement'
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,58): error C1003: le nombre d'erreurs est supérieur à 100 ; arrêt de la compilation
+  (compiler le fichier source 'Brick.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
   BrickTypes.cpp
   EndMenu.cpp
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\EndMenu.cpp(151,33): warning C4267: '=' : conversion de 'size_t' en 'int', perte possible de données
-  FileUtils.cpp
   Game.cpp
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,61): warning C4244: 'argument' : conversion de '_Ty2' en 'T', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,61): warning C4244:         with
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,61): warning C4244:         [
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,61): warning C4244:             _Ty2=int
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,61): warning C4244:         ]
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,61): warning C4244:         and
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,61): warning C4244:         [
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,61): warning C4244:             T=float
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,61): warning C4244:         ]
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,40): warning C4244: 'argument' : conversion de '_Ty1' en 'T', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,40): warning C4244:         with
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,40): warning C4244:         [
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,40): warning C4244:             _Ty1=int
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,40): warning C4244:         ]
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,40): warning C4244:         and
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,40): warning C4244:         [
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,40): warning C4244:             T=float
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(32,40): warning C4244:         ]
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(19,36): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(20,133): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(52,70): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(52,47): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(73,70): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(73,47): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(29,7): error C2535: 'void PauseMenu::selectItemByMouse(sf::Vector2f &)' : fonction membre déjà définie ou déclarée
+  (compiler le fichier source 'Game.cpp')
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(19,7):
+  voir la déclaration de 'PauseMenu::selectItemByMouse'
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(40,11): error C2086: 'sf::Font PauseMenu::font' : redéfinition
+  (compiler le fichier source 'Game.cpp')
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(43,24): error C2086: 'std::vector<sf::Text,std::allocator<sf::Text>> PauseMenu::menuItem' : redéfinition
+  (compiler le fichier source 'Game.cpp')
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(44,6): error C2086: 'int PauseMenu::selectedItemIndex' : redéfinition
+  (compiler le fichier source 'Game.cpp')
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.h(87,13): error C2086: 'EndMenu Game::endMenu' : redéfinition
+  (compiler le fichier source 'Game.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(35,61): warning C4244: 'argument' : conversion de '_Ty2' en 'T', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(35,61): warning C4244:         with
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(35,61): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(35,61): warning C4244:             _Ty2=int
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(35,61): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(35,61): warning C4244:         and
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(35,61): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(35,61): warning C4244:             T=float
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(35,61): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(35,40): warning C4244: 'argument' : conversion de '_Ty1' en 'T', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(35,40): warning C4244:         with
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(35,40): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(35,40): warning C4244:             _Ty1=int
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(35,40): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(35,40): warning C4244:         and
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(35,40): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(35,40): warning C4244:             T=float
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(35,40): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(25,36): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(26,132): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(118,12): error C2039: 'restartGame' n'est pas membre de 'Game'
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.h(28,7):
+  voir la déclaration de 'Game'
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(120,5): error C2065: 'isGameOver' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(121,5): error C2065: 'isMainMenuActive' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(122,5): error C2065: 'isPaused' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(123,5): error C2065: 'lives' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(124,5): error C2065: 'score' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(125,5): error C2065: 'bonusCount' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(126,5): error C2065: 'bricks' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(127,5): error C2065: 'hearts' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(128,5): error C2065: 'activeBallEffects' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(129,5): error C2065: 'isBallLaunched' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(132,5): error C2065: 'ball' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(132,22): error C2065: 'pad' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(132,48): error C2065: 'pad' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(132,73): error C2065: 'pad' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(132,100): error C2065: 'ball' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(133,5): error C2065: 'ball' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(134,5): error C3861: 'loadBrickTexture' : identificateur introuvable
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(138,5): error C2065: 'hud' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(139,5): error C2065: 'hud' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(139,21): error C2065: 'score' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(176,18): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(183,28): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(370,40): error C2248: 'PauseMenu::getClickSound' : impossible d'accéder à private membre déclaré(e) dans la classe 'PauseMenu'
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(33,13):
+  voir la déclaration de 'PauseMenu::getClickSound'
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(11,7):
+  voir la déclaration de 'PauseMenu'
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(374,40): error C2248: 'PauseMenu::getClickSound' : impossible d'accéder à private membre déclaré(e) dans la classe 'PauseMenu'
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(33,13):
+  voir la déclaration de 'PauseMenu::getClickSound'
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(11,7):
+  voir la déclaration de 'PauseMenu'
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(379,40): error C2248: 'PauseMenu::getClickSound' : impossible d'accéder à private membre déclaré(e) dans la classe 'PauseMenu'
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(33,13):
+  voir la déclaration de 'PauseMenu::getClickSound'
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(11,7):
+  voir la déclaration de 'PauseMenu'
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(470,12): error C2601: 'Game::update' : définitions de fonctions locales non conformes
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(200,28):
+  cette ligne comporte un '{' qui n'est pas équilibré
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(553,12): error C2601: 'Game::updateLevelEditor' : définitions de fonctions locales non conformes
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(200,28):
+  cette ligne comporte un '{' qui n'est pas équilibré
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(560,12): error C2601: 'Game::initializeMusic' : définitions de fonctions locales non conformes
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(200,28):
+  cette ligne comporte un '{' qui n'est pas équilibré
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(571,12): error C2601: 'Game::initializeLevelManager' : définitions de fonctions locales non conformes
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(200,28):
+  cette ligne comporte un '{' qui n'est pas équilibré
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(583,12): error C2601: 'Game::saveLevel' : définitions de fonctions locales non conformes
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(200,28):
+  cette ligne comporte un '{' qui n'est pas équilibré
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(604,12): error C2601: 'Game::checkLife' : définitions de fonctions locales non conformes
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(200,28):
+  cette ligne comporte un '{' qui n'est pas équilibré
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(632,12): error C2601: 'Game::checkVictoryCondition' : définitions de fonctions locales non conformes
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(200,28):
+  cette ligne comporte un '{' qui n'est pas équilibré
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(650,12): error C2601: 'Game::applyEffect' : définitions de fonctions locales non conformes
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(200,28):
+  cette ligne comporte un '{' qui n'est pas équilibré
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(692,12): error C2601: 'Game::loadBrickTexture' : définitions de fonctions locales non conformes
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(200,28):
+  cette ligne comporte un '{' qui n'est pas équilibré
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(698,11): error C2601: 'Game::getNextLevelNumber' : définitions de fonctions locales non conformes
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(200,28):
+  cette ligne comporte un '{' qui n'est pas équilibré
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(715,12): error C2601: 'Game::render' : définitions de fonctions locales non conformes
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(200,28):
+  cette ligne comporte un '{' qui n'est pas équilibré
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp(200,28): error C1075: '{' : jeton correspondant introuvable
   GameOver.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(48,1): error C2059: erreur de syntaxe : '<<'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(52,5): error C2065: 'replayText' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(61,25): error C2065: 'replayText' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(68,1): error C2059: erreur de syntaxe : '>>'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(77,1): error C2059: erreur de syntaxe : '<<'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(80,5): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(84,1): error C2059: erreur de syntaxe : '>>'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(90,1): error C2059: erreur de syntaxe : '<<'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(91,53): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(98,1): error C2059: erreur de syntaxe : '=='
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(99,49): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(99,49): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(102,9): error C2059: erreur de syntaxe : 'else'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(102,56): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(102,56): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(105,9): error C2059: erreur de syntaxe : 'else'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(105,57): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(105,57): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(108,5): error C2059: erreur de syntaxe : '}'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(108,5): error C2143: erreur de syntaxe : absence de ';' avant '}'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(110,1): error C2059: erreur de syntaxe : '}'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(110,1): error C2143: erreur de syntaxe : absence de ';' avant '}'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(112,25): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(112,25): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp(145,1): error C2059: erreur de syntaxe : '>>'
   Hud.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Hud.cpp(1,1): error C2059: erreur de syntaxe : '<<'
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\Config.hpp(207,1): error C2143: erreur de syntaxe : absence de ';' avant '{'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\Config.hpp(207,1): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(70,11): error C3646: 'asMilliseconds' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(70,25): error C2059: erreur de syntaxe : '('
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(70,33): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(80,11): error C3646: 'asMicroseconds' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(80,25): error C2059: erreur de syntaxe : '('
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(80,33): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(90,46): error C2061: erreur de syntaxe : identificateur 'Int32'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(91,46): error C2061: erreur de syntaxe : identificateur 'Int64'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(102,19): error C2061: erreur de syntaxe : identificateur 'Int64'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(102,5): error C2535: 'sf::Time::Time(void)' : fonction membre déjà définie ou déclarée
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(50,5):
+  voir la déclaration de 'sf::Time::Time'
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(109,11): error C3646: 'm_microseconds' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(109,25): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(136,22): error C2365: 'sf::milliseconds' : redéfinition ; la précédente définition était 'fonction'
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(90,33):
+  voir la déclaration de 'sf::milliseconds'
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(136,35): error C2065: 'Int32' : identificateur non déclaré
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(136,41): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur 'amount'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(149,22): error C2365: 'sf::microseconds' : redéfinition ; la précédente définition était 'fonction'
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(91,33):
+  voir la déclaration de 'sf::microseconds'
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(149,35): error C2065: 'Int64' : identificateur non déclaré
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(149,41): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur 'amount'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(304,44): error C2061: erreur de syntaxe : identificateur 'Int64'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(328,22): error C2473: 'operator *' : similaire à une définition de fonction, mais aucune liste de paramètres.
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(328,22): error C2365: 'sf::operator *' : redéfinition ; la précédente définition était 'fonction'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(328,33): error C2065: 'Int64' : identificateur non déclaré
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(328,39): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur 'left'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(352,47): error C2061: erreur de syntaxe : identificateur 'Int64'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(352,23): error C2805: nombre de paramètres insuffisant pour l'opérateur binaire 'operator *='
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(376,44): error C2061: erreur de syntaxe : identificateur 'Int64'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(376,22): error C2805: nombre de paramètres insuffisant pour l'opérateur binaire 'operator /'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(400,47): error C2061: erreur de syntaxe : identificateur 'Int64'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Time.hpp(400,23): error C2805: nombre de paramètres insuffisant pour l'opérateur binaire 'operator /='
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(63,19): error C3646: 'read' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(63,24): error C2062: type 'void' inattendu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(63,51): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(73,19): error C3646: 'seek' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(73,24): error C2065: 'Int64' : identificateur non déclaré
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(73,30): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur 'position'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(73,43): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(81,19): error C3646: 'tell' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(81,24): error C2059: erreur de syntaxe : ')'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(81,29): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(89,19): error C3646: 'getSize' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(89,27): error C2059: erreur de syntaxe : ')'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\InputStream.hpp(89,32): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(92,19): error C3646: 'read' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(92,24): error C2062: type 'void' inattendu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(92,47): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(102,19): error C3646: 'seek' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(102,24): error C2065: 'Int64' : identificateur non déclaré
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(102,30): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur 'position'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(102,39): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(110,19): error C3646: 'tell' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(110,24): error C2059: erreur de syntaxe : ')'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(110,25): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(118,19): error C3646: 'getSize' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(118,27): error C2059: erreur de syntaxe : ')'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\FileInputStream.hpp(118,28): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(74,19): error C3646: 'read' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(74,24): error C2062: type 'void' inattendu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(74,47): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(84,19): error C3646: 'seek' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(84,24): error C2065: 'Int64' : identificateur non déclaré
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(84,30): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur 'position'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(84,39): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(92,19): error C3646: 'tell' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(92,24): error C2059: erreur de syntaxe : ')'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(92,25): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(100,19): error C3646: 'getSize' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(100,27): error C2059: erreur de syntaxe : ')'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(100,28): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(108,17): error C3646: 'm_size' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(108,23): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(109,17): error C3646: 'm_offset' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\MemoryInputStream.hpp(109,25): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,40): error C2061: erreur de syntaxe : identificateur 'Uint32'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(83,23): error C2061: erreur de syntaxe : identificateur 'Uint32'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(274,40): error C2061: erreur de syntaxe : identificateur 'Uint32'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(290,23): error C2061: erreur de syntaxe : identificateur 'Uint32'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(482,40): error C2061: erreur de syntaxe : identificateur 'Uint32'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(499,23): error C2061: erreur de syntaxe : identificateur 'Uint32'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(678,5): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(678,19): error C2061: erreur de syntaxe : identificateur 'decodeAnsi'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(678,82): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(693,5): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(693,19): error C2061: erreur de syntaxe : identificateur 'decodeWide'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(693,39): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(711,27): error C2061: erreur de syntaxe : identificateur 'Uint32'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(728,27): error C2061: erreur de syntaxe : identificateur 'Uint32'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(39,37): error C2061: erreur de syntaxe : identificateur 'Uint32'
+  (compiler le fichier source 'Hud.cpp')
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(53,18): error C2187: erreur de syntaxe : 'Uint32' inattendu ici
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(53,25): error C2065: 'offsets' : identificateur non déclaré
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(59,46): error C2065: 'Uint8' : identificateur non déclaré
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(59,46): error C2187: erreur de syntaxe : 'Uint8' inattendu ici
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(59,60): error C2760: erreur de syntaxe : ']' était inattendu ici; ';' attendu
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(59,60): error C3878: erreur de syntaxe : jeton inattendu ']' après 'expression_statement'
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(59,60): message : erreur de récupération ignorée : « ] »
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(62,9): error C2065: 'output' : identificateur non déclaré
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,21): error C2065: 'output' : identificateur non déclaré
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,43): error C2065: 'Uint8' : identificateur non déclaré
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,43): error C2187: erreur de syntaxe : 'Uint8' inattendu ici
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,48): error C3878: erreur de syntaxe : jeton inattendu '>' après 'expression'
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,48): message : erreur de récupération ignorée : « > ( *  . . . ++ »
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,58): error C2760: erreur de syntaxe : ')' était inattendu ici; ';' attendu
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,58): error C3878: erreur de syntaxe : jeton inattendu ')' après 'expression_statement'
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,58): error C3878: erreur de syntaxe : jeton inattendu ')' après 'statement'
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,58): error C3878: erreur de syntaxe : jeton inattendu ')' après 'labeled_statement'
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
+C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.inl(65,58): error C1003: le nombre d'erreurs est supérieur à 100 ; arrêt de la compilation
+  (compiler le fichier source 'Hud.cpp')
+  C:\Users\killi\Downloads\SFML-2.5.1\include\SFML\System\Utf.hpp(67,15):
+  Le diagnostic s'est produit dans la fonction 'In sf::Utf<8>::decode(In,In)' générée par le compilateur
+  
   LevelGenerator.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(46,58): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(46,58): warning C4244:         with
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(46,58): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(46,58): warning C4244:             T=unsigned int
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(46,58): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(46,58): warning C4244:         and
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(46,58): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(46,58): warning C4244:             T=float
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(46,58): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(49,23): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(50,29): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(54,50): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(54,50): warning C4244:         with
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(54,50): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(54,50): warning C4244:             T=unsigned int
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(54,50): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(54,50): warning C4244:         and
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(54,50): warning C4244:         [
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(54,50): warning C4244:             T=float
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(54,50): warning C4244:         ]
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(55,23): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelGenerator.cpp(56,26): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
   LevelManager.cpp
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelManager.cpp(67,42): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelManager.cpp(68,144): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelManager.cpp(2,1): error C2059: erreur de syntaxe : '<<'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_filebuf.hpp(27,1): error C2143: erreur de syntaxe : absence de ';' avant '{'
+  (compiler le fichier source 'LevelManager.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_filebuf.hpp(27,1): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+  (compiler le fichier source 'LevelManager.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\fstream(57,38): error C2065: '_Is_any_path' : identificateur non déclaré
+  (compiler le fichier source 'LevelManager.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\fstream(57,38):
+  le contexte d’instanciation du modèle (le plus ancien) est
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\fstream(23,7):
+  	lors de la compilation du modèle de classe 'std::basic_ifstream'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\fstream(57,62): error C2988: impossible de reconnaître la définition/déclaration de modèle
+  (compiler le fichier source 'LevelManager.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\fstream(57,62): error C2059: erreur de syntaxe : '='
+  (compiler le fichier source 'LevelManager.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\fstream(60,9): error C2334: jetons inattendus avant ':' ; corps apparent de la fonction ignoré
+  (compiler le fichier source 'LevelManager.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\fstream(169,1): error C1903: impossible de récupérer à partir des erreurs précédentes ; arrêt de la compilation
+  (compiler le fichier source 'LevelManager.cpp')
+  
   MainMenu.cpp
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\MainMenu.cpp(23,28): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\MainMenu.cpp(23,28): warning C4244:         with
@@ -145,24 +1003,144 @@ C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Main
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\MainMenu.cpp(22,28): warning C4244:             T=unsigned int
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\MainMenu.cpp(22,28): warning C4244:         ]
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\MainMenu.cpp(103,37): warning C4267: '=' : conversion de 'size_t' en 'int', perte possible de données
-  Music.cpp
   OptionsMenu.cpp
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\OptionsMenu.cpp(89,37): warning C4267: '=' : conversion de 'size_t' en 'int', perte possible de données
   PadEffect.cpp
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(6,21): warning C4244: '-=' : conversion de 'float' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(4,1): error C2059: erreur de syntaxe : '<<'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(8,16): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(8,26): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(8,46): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(8,58): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(9,32): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(9,64): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(9,66): error C2059: erreur de syntaxe : '{'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(9,66): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(9,66): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(25,1): error C2059: erreur de syntaxe : '=='
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(27,41): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(27,41): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(41,1): error C2059: erreur de syntaxe : '<<'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(42,40): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(42,40): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(58,1): error C2059: erreur de syntaxe : '=='
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(59,17): error C2039: 'display' n'est pas membre de 'PadEffect'
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.h(24,7):
+  voir la déclaration de 'PadEffect'
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(59,27): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(59,27): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(71,24): error C2511: 'std::string PadEffect::PadEffectTypeToString(PadEffectType)' : impossible de trouver la fonction membre surchargée dans 'PadEffect'
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.h(24,7):
+  voir la déclaration de 'PadEffect'
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp(78,1): error C2059: erreur de syntaxe : '>>'
   main.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(29,7): error C2535: 'void PauseMenu::selectItemByMouse(sf::Vector2f &)' : fonction membre déjà définie ou déclarée
+  (compiler le fichier source 'main.cpp')
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(19,7):
+  voir la déclaration de 'PauseMenu::selectItemByMouse'
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(40,11): error C2086: 'sf::Font PauseMenu::font' : redéfinition
+  (compiler le fichier source 'main.cpp')
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(43,24): error C2086: 'std::vector<sf::Text,std::allocator<sf::Text>> PauseMenu::menuItem' : redéfinition
+  (compiler le fichier source 'main.cpp')
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(44,6): error C2086: 'int PauseMenu::selectedItemIndex' : redéfinition
+  (compiler le fichier source 'main.cpp')
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.h(87,13): error C2086: 'EndMenu Game::endMenu' : redéfinition
+  (compiler le fichier source 'main.cpp')
+  
   Pad.cpp
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(4,16): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(12,68): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-  PadSpeedBoost.cpp
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadSpeedBoost.cpp(8,33): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
-  Génération de code en cours...
-  Compilation en cours...
-  PadSpeedNerf.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(3,1): error C2059: erreur de syntaxe : '<<'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16): warning C4244: 'initialisation' : conversion de '_Ty' en '_Ty1', perte possible de données
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16): warning C4244:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16): warning C4244:             _Ty=double
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16): warning C4244:         ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16): warning C4244:         and
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16): warning C4244:             _Ty1=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16): warning C4244:         ]
+  (compiler le fichier source 'Pad.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,16):
+  le contexte d’instanciation du modèle (le plus ancien) est
+  	C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(6,41):
+  	voir la référence à l'instanciation de la fonction modèle 'std::pair<int,int>::pair<double,double,0>(_Other1 &&,_Other2 &&) noexcept' en cours de compilation
+          with
+          [
+              _Other1=double,
+              _Other2=double
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,54): warning C4244: 'initialisation' : conversion de '_Ty' en '_Ty2', perte possible de données
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,54): warning C4244:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,54): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,54): warning C4244:             _Ty=double
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,54): warning C4244:         ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,54): warning C4244:         and
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,54): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,54): warning C4244:             _Ty2=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(250,54): warning C4244:         ]
+  (compiler le fichier source 'Pad.cpp')
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(9,16): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(30,68): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(32,1): error C2059: erreur de syntaxe : '=='
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(34,17): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(34,36): error C2065: 'size' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(34,57): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(34,105): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(34,102): error C2065: 'spd' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(34,118): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(34,114): error C2065: 'size' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(34,132): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(34,127): error C2065: 'size' : identificateur non déclaré
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(34,137): error C2059: erreur de syntaxe : '{'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(34,137): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(34,137): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(36,11): error C2084: la fonction 'void Pad::moveLeft(float)' a déjà un corps
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(23,11):
+  voir la définition précédente de 'moveLeft'
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(40,11): error C2084: la fonction 'void Pad::moveRight(float)' a déjà un corps
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(28,11):
+  voir la définition précédente de 'moveRight'
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(42,68): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(43,1): error C2059: erreur de syntaxe : '>>'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(45,36): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(45,36): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(53,1): error C2059: erreur de syntaxe : '<<'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(57,45): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(57,45): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(75,1): error C2059: erreur de syntaxe : '<<'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(76,42): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(76,42): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(83,1): error C2059: erreur de syntaxe : '=='
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(85,29): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp(85,29): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+  PadEffectList.cpp
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffectList.cpp(35,45): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffectList.cpp(49,45): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
   PauseMenu.cpp
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.cpp(48,50): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.cpp(122,37): warning C4267: '=' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(29,7): error C2535: 'void PauseMenu::selectItemByMouse(sf::Vector2f &)' : fonction membre déjà définie ou déclarée
+  (compiler le fichier source 'PauseMenu.cpp')
+  C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(19,7):
+  voir la déclaration de 'PauseMenu::selectItemByMouse'
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(40,11): error C2086: 'sf::Font PauseMenu::font' : redéfinition
+  (compiler le fichier source 'PauseMenu.cpp')
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(43,24): error C2086: 'std::vector<sf::Text,std::allocator<sf::Text>> PauseMenu::menuItem' : redéfinition
+  (compiler le fichier source 'PauseMenu.cpp')
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.h(44,6): error C2086: 'int PauseMenu::selectedItemIndex' : redéfinition
+  (compiler le fichier source 'PauseMenu.cpp')
+  
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.cpp(4,1): error C2059: erreur de syntaxe : '<<'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.cpp(5,48): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.cpp(5,48): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.cpp(221,1): error C1004: fin de fichier inattendue rencontrée
   Génération de code en cours...
-  LINK : C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\x64\Debug\CasseBriqueTry.exe introuvable ou non généré par la dernière édition de liens incrémentielle ; édition de liens complète en cours
->>>>>>> Eric
-  CasseBriqueTry.vcxproj -> C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\x64\Debug\CasseBriqueTry.exe
