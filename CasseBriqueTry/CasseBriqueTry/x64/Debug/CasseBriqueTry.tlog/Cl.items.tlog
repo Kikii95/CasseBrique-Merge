@@ -1,9 +1,19 @@
+<<<<<<< HEAD
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BackgroundShader.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\BackgroundShader.obj
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\Ball.obj
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffect.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\BallEffect.obj
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffectList.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\BallEffectList.obj
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\Brick.obj
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BrickTypes.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\BrickTypes.obj
+=======
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Ball.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\Ball.obj
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallEffect.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\BallEffect.obj
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallSpeedBoost.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\BallSpeedBoost.obj
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BallSpeedNerf.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\BallSpeedNerf.obj
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Brick.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\Brick.obj
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\BrickTypes.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\BrickTypes.obj
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\EndMenu.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\EndMenu.obj
+>>>>>>> Eric
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\FileUtils.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\FileUtils.obj
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Game.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\Game.obj
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\GameOver.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\GameOver.obj
@@ -12,8 +22,17 @@ C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Leve
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\LevelManager.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\LevelManager.obj
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\MainMenu.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\MainMenu.obj
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Music.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\Music.obj
+<<<<<<< HEAD
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\PadEffect.obj
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\main.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\main.obj
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\Pad.obj
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffectList.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\PadEffectList.obj
+=======
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\OptionsMenu.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\OptionsMenu.obj
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadEffect.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\PadEffect.obj
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\main.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\main.obj
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\Pad.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\Pad.obj
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadSpeedBoost.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\PadSpeedBoost.obj
+C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PadSpeedNerf.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\PadSpeedNerf.obj
+>>>>>>> Eric
 C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\PauseMenu.cpp;C:\Users\killi\source\repos\CasseBrique-Merge\CasseBriqueTry\CasseBriqueTry\x64\Debug\PauseMenu.obj

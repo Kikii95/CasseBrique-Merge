@@ -45,6 +45,27 @@ GameOver::GameOver(sf::RenderWindow& window) : MainMenu(window), window(window) 
     sf::FloatRect scoreBounds = scoreText.getLocalBounds();
     scoreText.setOrigin(scoreBounds.width / 2, scoreBounds.height / 2);
     scoreText.setPosition(SCREEN_WIDTH / 2, 450);
+<<<<<<< HEAD
+=======
+
+    sf::Text replayText("Rejouer", font, 50);
+    replayText.setFillColor(sf::Color::Red); // Sélectionné par défaut
+
+    sf::Text optionsText("Options", font, 50);
+    optionsText.setFillColor(sf::Color::White);
+
+    sf::Text quitText("Quitter", font, 50);
+    quitText.setFillColor(sf::Color::White);
+
+    // Ajoute-les dans le vecteur menuItems
+    menuItems.push_back(replayText);
+    menuItems.push_back(optionsText);
+    menuItems.push_back(quitText);
+
+    // Initialise selectedItemIndex
+    selectedItemIndex = 0;
+    
+>>>>>>> Eric
 }
 
 void GameOver::display() {
@@ -53,11 +74,20 @@ void GameOver::display() {
     window.draw(bricksRemainingText);
     window.draw(bonusText);
     window.draw(scoreText);
+<<<<<<< HEAD
+=======
+
+    for (auto& item : menuItems) {
+        window.draw(item);  // Dessine chaque élément du menu
+    }
+    
+>>>>>>> Eric
 }
 
 
 bool GameOver::handleEvent(sf::Event& event) {
     if (event.type == sf::Event::KeyPressed) {
+<<<<<<< HEAD
         if (event.key.code == sf::Keyboard::Escape) {
             // Logique pour g�rer l'appui sur Escape (retour au menu principal)
             return true; // Retourne true pour indiquer un �v�nement trait�
@@ -65,3 +95,51 @@ bool GameOver::handleEvent(sf::Event& event) {
     }
     return false; // Aucun �v�nement pertinent trait�
 }
+=======
+        if (event.key.code == sf::Keyboard::Up) {
+            moveUp();
+        }
+        else if (event.key.code == sf::Keyboard::Down) {
+            moveDown();
+        }
+        else if (event.key.code == sf::Keyboard::Enter) {
+            select(); // Appeler la méthode de sélection
+        }
+    }
+    return false;
+}
+
+void GameOver::moveUp() {
+    if (selectedItemIndex - 1 >= 0) {
+        menuItems[selectedItemIndex].setFillColor(sf::Color::White);  // Réinitialise l'ancienne sélection
+        selectedItemIndex--;
+        menuItems[selectedItemIndex].setFillColor(sf::Color::Red);    // Mets en surbrillance le nouvel élément
+    }
+}
+
+void GameOver::moveDown() {
+    if (selectedItemIndex + 1 < menuItems.size()) {
+        menuItems[selectedItemIndex].setFillColor(sf::Color::White);
+        selectedItemIndex++;
+        menuItems[selectedItemIndex].setFillColor(sf::Color::Red);
+    }
+}
+
+void GameOver::select() {
+    if (selectedItemIndex == 0) {
+      
+       
+    }
+    else if (selectedItemIndex == 1) {
+      
+       
+    }
+    else if (selectedItemIndex == 2) {
+        window.close(); 
+    }
+}
+
+int GameOver::getSelectedItemIndex() const {
+    return selectedItemIndex;
+}
+>>>>>>> Eric

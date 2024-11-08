@@ -1,5 +1,6 @@
 #include "Pad.h"
 #include <algorithm> 
+<<<<<<< HEAD
 
 float Pad::originalSpeed = 500.0f;
 std::pair<int, int> Pad::originalSize = { 0.8 * SCREEN_WIDTH ,0.2 * SCREEN_HEIGHT };
@@ -28,6 +29,18 @@ void Pad::moveRight(float deltaTime) {
     positionX += speed * deltaTime;
     if (positionX + sizeX > SCREEN_WIDTH) positionX = SCREEN_WIDTH - sizeX;
 }
+=======
+Pad::Pad(float spd, int size)
+    : positionX(SCREEN_WIDTH / 2 - size / 2), positionY(SCREEN_HEIGHT - (SCREEN_HEIGHT / 10)), speed(spd), sizeX(size), sizeY(size / 6) {}
+
+void Pad::moveLeft(float deltaTime) {
+    positionX -= speed * deltaTime;
+    if (positionX < 0) positionX = 0; }
+
+void Pad::moveRight(float deltaTime) {
+    positionX += speed * deltaTime;
+    if (positionX + sizeX > SCREEN_WIDTH) positionX = SCREEN_WIDTH - sizeX; }
+>>>>>>> Eric
 
 void Pad::setSpeed(float newSpeed) {
     speed = newSpeed;
@@ -37,7 +50,10 @@ float Pad::getSpeed()  {
     return speed;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> Eric
 std::pair<float, float> Pad::getPosition()  {
     return { positionX, positionY };
 }
@@ -56,6 +72,7 @@ void Pad::setSize(int size) {
     sizeY = size / 3;
 }
 
+<<<<<<< HEAD
 sf::RectangleShape Pad::getShape() const {
     sf::RectangleShape shape(sf::Vector2f(sizeX, sizeY));
     shape.setPosition(positionX, positionY);
@@ -63,6 +80,8 @@ sf::RectangleShape Pad::getShape() const {
     return shape;
 }
 
+=======
+>>>>>>> Eric
 void Pad::displayPosition() {
     std::cout << "Pad a la position : " << positionX << ", " << positionY << std::endl;
 }

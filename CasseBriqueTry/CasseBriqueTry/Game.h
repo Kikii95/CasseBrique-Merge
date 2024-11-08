@@ -9,6 +9,7 @@
 #include "Brick.h"
 #include "MainMenu.h"
 #include "PauseMenu.h"
+#include "GameOver.h"
 #include <cstdlib>  
 #include <ctime>   
 #include "LevelManager.h"
@@ -18,7 +19,7 @@
 #include <functional>
 #include "Music.h"
 #include "LevelManager.h"
-#include "GameOver.h"
+#include "OptionsMenu.h"
 
 
 #define SCREEN_WIDTH 3840
@@ -37,6 +38,10 @@ protected:
     sf::RenderWindow window;
     HUD hud;
     Pad pad;
+    bool isOptionsMenuActive;
+    bool isGameActive = false;
+    bool isMainMenuActive;
+    bool isPaused;
     Ball ball;
     std::vector<Brick> bricks;
     int score = 0; 
@@ -44,7 +49,7 @@ protected:
     std::vector<sf::Sprite> hearts; 
     sf::Texture heartTexture; 
     sf::Texture heartLostTexture; 
-    bool isGameOver = false;
+    bool isGameOver;
     
 
 
@@ -65,9 +70,7 @@ private:
 
     int lives = 3;
     bool isBallLaunched = false;
-    bool isGameActive = false;
-    bool isMainMenuActive;
-    bool isPaused;
+    
     bool isLevelEditorActive = false;
     sf::RectangleShape padShape;
     sf::Clock clock;
@@ -75,9 +78,17 @@ private:
     GameOver gameOverScreen;
     sf::Event event;
     LevelManager levelManager;
+    EndMenu endMenu;
     sf::Shader backgroundShader;
     sf::RectangleShape background;
     std::vector<Ball> activeBalls;
     LevelGenerator levelGenerator;
     void checkLife();
+    EndMenu endMenu;
+    OptionsMenu* optionsMenu;
+    bool isVolumeChanged;
+    bool isResolutionChanged;
+    float volume; // Volume initial
+    int resolutionWidth;
+    int resolutionHeight;
 };

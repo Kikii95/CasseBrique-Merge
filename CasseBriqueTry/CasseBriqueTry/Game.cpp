@@ -8,7 +8,8 @@
 #include <filesystem>
 #include "BallEffectList.h"
 #include "BackgroundShader.h"  // Inclusion correcte du shader
-
+#include "EndMenu.h"
+#include "Utils.h"
 
 #define SCREEN_WIDTH 3840
 #define SCREEN_HEIGHT 2160
@@ -24,8 +25,13 @@ Game::Game()
     pad((0.8 * SCREEN_WIDTH), (0.2 * SCREEN_HEIGHT)),
     ball(pad.getPosition().first + pad.getSize().first / 2, pad.getPosition().second - ball.originalSize, ball.originalSpeed, ball.originalSize),
     levelManager(),
+    isOptionsMenuActive(false),
     isMainMenuActive(true),
     isPaused(false),
+    endMenu(window),
+    resolutionWidth(SCREEN_WIDTH),  
+    resolutionHeight(SCREEN_HEIGHT), 
+    volume(50.0f),
     padShape(sf::Vector2f(pad.getSize().first, pad.getSize().second))
 {
     if (!pad.loadTexture("50-Breakout-Tiles.png")) {
@@ -54,7 +60,6 @@ Game::Game()
         hearts.push_back(heart);
     }
 
-    initializeMusic();
     loadBrickTexture();
 
     std::srand(static_cast<unsigned int>(std::time(nullptr)));
@@ -106,6 +111,37 @@ void Game::loadBricksFromJson() {
     }
 
     std::cout << "Toutes les briques ont été chargées depuis level_3.json" << std::endl;
+
+}
+
+
+void Game::restartGame() {
+    // Réinitialisation des variables
+    isGameOver = false;
+    isMainMenuActive = true;
+    isPaused = false;
+    lives = 3;
+    score = 0;
+    bonusCount = 0;
+    bricks.clear();  
+    hearts.clear();  
+    activeBallEffects.clear();  
+    isBallLaunched = false;
+
+    // Réinitialiser la balle et le pad
+    ball.setPosition(pad.getPosition().first + pad.getSize().first / 2, pad.getPosition().second - ball.getSize() / 2);
+    ball.setSpeed(400);
+    loadBrickTexture();  
+    // bricks = Brick::createBricks(5, 10, (0.06 * SCREEN_WIDTH), (0.02 * SCREEN_WIDTH)); 
+
+    // Réinitialiser le menu
+    hud.getMainMenu().reset();  
+    hud.updateScore(score);
+
+    // Réinitialiser la musique
+    
+
+    
 }
 
 
@@ -188,12 +224,45 @@ void Game::processEvents() {
                         isMainMenuActive = false;
                         isGameActive = true;  // Utiliser isGameActive pour l'affichage
                     }
+                    else if (selectedOption == 1) {
+                        restartGame();
+                        isMainMenuActive = false;
+                        initializeLevelManager();
+                        //std::cout << "Level Generator selected from main menu" << std::endl;
+
+                    }
                     else if (selectedOption == 2) {
                         // "Level Generator" => Mode éditeur complet avec ajout de briques
                         isMainMenuActive = false;
                         isLevelEditorActive = true;
+                       
+                    }
+                    
+                    else if (selectedOption == 3) {
+                        window.close();
+                    }
+                }
+                else if (event.type == sf::Event::MouseMoved) {
+                sf::Vector2f mousepos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+                hud.getMainMenu().selectItemByMouse(mousepos);
+                }
+                else if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
+                    sf::Vector2f mousepos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+                    hud.getMainMenu().selectItemByMouse(mousepos);
+
+                    int selectedOption = hud.getMainMenu().getSelectedItemIndex();
+                    if (selectedOption == 0) {
+                        hud.getMainMenu().getClickSound().play();
+                        restartGame();
+                        isMainMenuActive = false;
+                    }
+                    else if (selectedOption == 1) {
+                        hud.getMainMenu().getClickSound().play();
+                        isOptionsMenuActive = true;
+                        isMainMenuActive = false;
                     }
                     else if (selectedOption == 3) {
+                        hud.getMainMenu().getClickSound().play();
                         window.close();
                     }
                 }
@@ -213,38 +282,182 @@ void Game::processEvents() {
                 else if (event.key.code == sf::Keyboard::Escape) {
                     isLevelEditorActive = false;
                     isMainMenuActive = true;  // Retour au menu principal
+        }
+        // else if (isPaused) {
+        //     if (event.type == sf::Event::KeyPressed) {
+        //         if (event.key.code == sf::Keyboard::Up) {
+        //             hud.getPauseMenu().moveUp();
+        //         }
+        //         else if (event.key.code == sf::Keyboard::Down) {
+        //             hud.getPauseMenu().moveDown();
+        //         }
+        //         else if (event.key.code == sf::Keyboard::Enter) {
+        //             int selectedOption = hud.getPauseMenu().getSelectedItemIndex();
+        //             if (selectedOption == 0 /*Play*/) {
+        //                 isPaused = false;
+        //             }
+        //             else if (selectedOption == 1 /* Restart */) {
+        //                 LevelType currentLevel = levelManager.getCurrentLevel();
+        //                 levelManager.initializeLevel(currentLevel, pad, ball, bricks);
+        else if (isOptionsMenuActive) {
+            // Gérer le mouvement de la souris et mettre à jour le volume en temps réel
+            if (event.type == sf::Event::MouseMoved) {
+                sf::Vector2i mousePixelPos = sf::Mouse::getPosition(window);
+                sf::Vector2f mousePos = window.mapPixelToCoords(mousePixelPos);
+
+                // Vérifie si la souris est au-dessus de la barre de volume
+                if (hud.getOpMenu().getVolumeBar().getGlobalBounds().contains(mousePos)) {
+                    // Calculer la position relative de la souris sur la barre de volume
+                    float newVolume = (mousePos.x - hud.getOpMenu().getVolumeBar().getPosition().x) / hud.getOpMenu().getVolumeBar().getSize().x;
+
+                    // Limiter la valeur du volume entre 0 et 1
+                    clamp(newVolume, 0.0f, 1.0f);
+
+                    // Mettre à jour le volume (en pourcentage)
+                    hud.getOpMenu().setVolume(newVolume * 100.0f);  // Convertir en pourcentage (0-100)
+
+                    // Déplacer le curseur de volume à la position appropriée
+                    hud.getOpMenu().updateVolumeSlider(mousePos);    // Déplacer le curseur visuellement
+                }
+
+                // Sélectionner un élément du menu par la souris
+                hud.getOpMenu().selectItemByMouse(mousePos);
+            }
+
+            // Gérer le clic de la souris pour d'autres actions si nécessaire
+            if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
+                sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+                hud.getOpMenu().selectItemByMouse(mousePos);
+
+                int selectedOption = hud.getOpMenu().getSelectedItemIndex();
+                if (selectedOption == 1) { // Résolution (changer la résolution)
+                    if (resolutionWidth == 2560 && resolutionHeight == 1440) {
+                        // Change la résolution à 1920x1080
+                        hud.getOpMenu().changeResolution(1920, 1080);
+                        resolutionWidth = 1920;
+                        resolutionHeight = 1080;
+                    }
+                    else {
+                        // Change la résolution à 2560x1440
+                        hud.getOpMenu().changeResolution(2560, 1440);
+                        resolutionWidth = 2560;
+                        resolutionHeight = 1440;
+                    }
+                }
+                else if (selectedOption == 2) { // Revenir au menu principal
+                    isOptionsMenuActive = false;
+                    isMainMenuActive = true;
                 }
             }
         }
         else if (isPaused) {
+            // Gérer les événements du menu de pause
             if (event.type == sf::Event::KeyPressed) {
-                if (event.key.code == sf::Keyboard::Up) {
-                    hud.getPauseMenu().moveUp();
+                if (event.key.code == sf::Keyboard::Escape) {
+                    isPaused = false;  // Quitter le menu de pause
                 }
-                else if (event.key.code == sf::Keyboard::Down) {
-                    hud.getPauseMenu().moveDown();
+            }
+            if (event.type == sf::Event::MouseMoved) {
+                sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+                hud.getPauseMenu().selectItemByMouse(mousePos);
+            }
+            if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
+                sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+                hud.getPauseMenu().selectItemByMouse(mousePos);
+
+                int selectedOption = hud.getPauseMenu().getSelectedItemIndex();
+                if (selectedOption == 0) { // Reprendre le jeu
+                    hud.getPauseMenu().getClickSound().play();
+                    isPaused = false;
                 }
-                else if (event.key.code == sf::Keyboard::Enter) {
-                    int selectedOption = hud.getPauseMenu().getSelectedItemIndex();
-                    if (selectedOption == 0) {
-                        isPaused = false;
-                    }
-                    else if (selectedOption == 1) {
-                        LevelType currentLevel = levelManager.getCurrentLevel();
-                        levelManager.initializeLevel(currentLevel, pad, ball, bricks);
+                else if (selectedOption == 1) { // Retourner au menu principal
+                    hud.getPauseMenu().getClickSound().play();
+                    isOptionsMenuActive = true;
+                    isPaused = false;
+                }
+                else if (selectedOption == 2) { // Quitter
+                    hud.getPauseMenu().getClickSound().play();
+                    isMainMenuActive = true;
+                    isPaused = false;
+                }
+            }
+        }
+        else if (isGameOver) {
+            // Gérer les événements du menu de fin
+            if (endMenu.handleEvent(event)) {
+                int selectedOption = endMenu.getSelectedItemIndex();
+                if (selectedOption == 0) { // "Retry"
+                    endMenu.playClickSound();
+                    restartGame();
+                    isMainMenuActive = false;
+                }
+                else if (selectedOption == 1) { // "Quit"
+                    endMenu.playClickSound();
+                    isOptionsMenuActive = true;
+                    isGameOver = false;
+                }
+                else if (selectedOption == 2) { // "Quit"
+                    endMenu.playClickSound();
+                    window.close();
+                }
+            }
+            if (event.type == sf::Event::MouseMoved) {
+                sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+                endMenu.selectItemByMouse(mousePos); // Change la sélection par la souris
+            }
 
-                        lives = 3;
-                        for (size_t i = 0; i < hearts.size(); ++i) {
-                            hearts[i].setTexture(heartTexture);
-                        }
+            if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
+                sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+                endMenu.selectItemByMouse(mousePos); // Sélectionner l'élément par souris
 
-                        isBallLaunched = false;
-                        isPaused = false;
+                int selectedOption = endMenu.getSelectedItemIndex();
+                if (selectedOption == 0) { // "Retry"
+                    endMenu.playClickSound();
+                    restartGame();
+                    isMainMenuActive = false;
+                }
+                else if (selectedOption == 2) { // "Quit"
+                    endMenu.playClickSound();
+                    window.close();
+                }
+            }
+        }
+        else {
+            // Gérer les autres événements (par exemple, Échap pour revenir en pause)
+            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
+                // isMainMenuActive = false;
+                // levelManager.setSelectedOption(0);
+                isPaused = !isPaused; // Bascule l'état de la pause
+            }
+        }
+        if (event.type == sf::Event::KeyPressed) {
+            if (event.key.code == sf::Keyboard::Up) {
+                hud.getPauseMenu().moveUp();
+            }
+            else if (event.key.code == sf::Keyboard::Down) {
+                hud.getPauseMenu().moveDown();
+            }
+            else if (event.key.code == sf::Keyboard::Enter) {
+                int selectedOption = hud.getPauseMenu().getSelectedItemIndex();
+                if (selectedOption == 0) {
+                    isPaused = false;
+                }
+                else if (selectedOption == 1) {
+                    LevelType currentLevel = levelManager.getCurrentLevel();
+                    levelManager.initializeLevel(currentLevel, pad, ball, bricks);
+
+                    lives = 3;
+                    for (size_t i = 0; i < hearts.size(); ++i) {
+                        hearts[i].setTexture(heartTexture);
                     }
-                    else if (selectedOption == 3) {
-                        isMainMenuActive = true;
-                        isPaused = false;
-                    }
+
+                    isBallLaunched = false;
+                    isPaused = false;
+                }
+                else if (selectedOption == 3) {
+                    isMainMenuActive = true;
+                    isPaused = false;
+                }
                 }
             }
         }
@@ -347,15 +560,13 @@ void Game::updateLevelEditor() {
 void Game::initializeMusic() {
     if (music.loadFromFile("medievale.ogg")) {
         music.setLoop(true);
-        music.setVolume(50);
+        music.setVolume(volume);
         music.play();
     }
     else {
         std::cerr << "Erreur : Impossible de charger la musique." << std::endl;
     }
 }
-
-
 
 void Game::initializeLevelManager() {
     if (!levelManager.selectLevel(window, LevelType::LEVEL_1)) {
@@ -434,6 +645,8 @@ void Game::checkVictoryCondition() {
     }
 }
 
+
+
 void Game::applyEffect(int effectIndex) {
     std::unique_ptr<BallEffect> newEffect;
     int duration = BallEffect::getEffectDuration();
@@ -502,26 +715,21 @@ int Game::getNextLevelNumber() {
 void Game::render() {
     window.clear();
 
+     hud.draw(window, isMainMenuActive, isPaused, isGameOver, isOptionsMenuActive);
 
     if (isLevelEditorActive) {
-        // Mode éditeur : affiche un fond noir sans appliquer de shader
         window.clear(sf::Color::Black);
-        levelGenerator.drawGrid(window);  // Affiche le quadrillage
+        levelGenerator.drawGrid(window); 
     }
     else {
-        // Met à jour le temps pour le shader
-        // Met à jour `iTime` à chaque frame
         backgroundShader.setUniform("iTime", clock.getElapsedTime().asSeconds());
-        //std::cout << "Temps passé : " << clock.getElapsedTime().asSeconds() << std::endl;
         sf::Vector2f resolution(window.getSize());
         backgroundShader.setUniform("iResolution", sf::Glsl::Vec2(1920.0f, 1080.0f));
-
         sf::RectangleShape background(sf::Vector2f(resolution.x, resolution.y));
         background.setPosition(0, 0);
         window.draw(background, &backgroundShader);
+        
 
-
-        // Affichage des autres éléments de l'interface
         if (isMainMenuActive) {
             hud.draw(window, isMainMenuActive);
         }
@@ -542,7 +750,7 @@ void Game::render() {
             }
         }
         else if (isGameOver) {
-            gameOverScreen.display();
+            endMenu.display();
         }
 
         window.display();
