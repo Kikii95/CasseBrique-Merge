@@ -220,6 +220,25 @@ void Game::update(float deltaTime) {
         return;
     }
     if (!isMainMenuActive && !isPaused && !isGameOver) {
+        float moveDirection = /*ball.areControlsReversed() ? -1.0f :*/ 1.0f;
+
+        if (isBallLaunched && sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
+            if (moveDirection > 0) {
+                pad.moveLeft(deltaTime);
+            }
+            else {
+                pad.moveRight(deltaTime);
+            }
+        }
+        if (isBallLaunched && sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
+            if (moveDirection > 0) {
+                pad.moveRight(deltaTime);
+            }
+            else {
+                pad.moveLeft(deltaTime);
+            }
+        }
+
         if (!isBallLaunched) {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
                 float directionX;
@@ -239,15 +258,17 @@ void Game::update(float deltaTime) {
             for (auto& ball : activeBalls) {
                 ball.move(deltaTime, padShape, bricks, pad);
             }
+
             checkLife();
             checkVictoryCondition();
         }
 
         padShape.setPosition(pad.getPosition().first, pad.getPosition().second);
-        for (size_t i = 0; i < bricks.size(); ++i) {
+
+        /*for (size_t i = 0; i < bricks.size(); ++i) {
             if (!bricks[i].isBroken() && ball.getShape().getGlobalBounds().intersects(bricks[i].getShape().getGlobalBounds())) {
                 bricks[i].takeHit();
-                if (bricks[i].isDestroyed()) {
+                if (bricks[i].isBroken()) {
                     int randomEffectIndex = rand() % 22;
                     applyEffect(randomEffectIndex);
                     hud.updateScore(10);
@@ -257,7 +278,30 @@ void Game::update(float deltaTime) {
                 }
                 break;
             }
+        }*/
+        for (size_t i = 0; i < bricks.size(); ++i) {
+            if (bricks[i].isBroken()) {
+                int randomEffectIndex = rand() % 22;
+                applyEffect(randomEffectIndex);
+                hud.updateScore(10);
+                bricks.erase(bricks.begin() + i);
+                break;
+            }
         }
+        for (auto& effect : activeBallEffects) {
+            effect->update(deltaTime);
+        }
+
+        activeBallEffects.erase(
+            std::remove_if(
+                activeBallEffects.begin(),
+                activeBallEffects.end(),
+                [](const std::unique_ptr<BallEffect>& effect) {
+                    return !effect->isEffectActive();
+                }
+            ),
+            activeBallEffects.end()
+        );
     }
 }
 
@@ -369,7 +413,21 @@ void Game::applyEffect(int effectIndex) {
     case 10: newEffect = std::make_unique<BallInvisible>(ball, activeBalls, duration); break;
     case 11: newEffect = std::make_unique<BallSplit>(ball, activeBalls, duration); break;
     }
-    activeBallEffects.push_back(std::move(newEffect));
+    bool alreadyActive = false;
+    for (const auto& effect : activeBallEffects) {
+        if (typeid(*effect) == typeid(*newEffect)) {
+            alreadyActive = true;
+            effect->resetDuration();
+            break;
+        }
+    }
+
+    if (newEffect) {
+        newEffect->applyEffect();
+        if (newEffect->isEffectActive()) {
+            activeBallEffects.push_back(std::move(newEffect));
+        }
+    }
 }
 
 void Game::loadBrickTexture() {
@@ -406,13 +464,12 @@ void Game::render() {
         window.draw(background, &backgroundShader);
 
         if (isMainMenuActive) {
-            hud.draw(window, isMainMenuActive);
+            hud.draw(window, isMainMenuActive, isPaused, isGameOver, isOptionsMenuActive);
         }
         else if (isGameActive) {
             for (auto& heart : hearts) {
                 window.draw(heart);
             }
-            window.draw(ball.getShape());
             window.draw(pad.getShape());
             for (auto& ball : activeBalls) {
                 window.draw(ball.getShape());

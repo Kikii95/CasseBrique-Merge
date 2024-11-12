@@ -33,6 +33,7 @@ public:
     std::vector<std::unique_ptr<BallEffect>> activeBallEffects;
     void applyEffect(int effectIndex);
     bool isVictory = false;
+    void resetBall();
 
 protected: 
     sf::RenderWindow window;
@@ -55,7 +56,6 @@ protected:
 
 private:
     void restartGame();
-    void resetBall();
     void loadBrickTexture();
     void initializeLevelManager();
     void initializeMusic();

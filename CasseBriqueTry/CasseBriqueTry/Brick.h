@@ -6,9 +6,9 @@
 class Brick {
 public:
     Brick(int x, int y, int width, int height);
-    void loadTexture(const std::string& textureFile);
     void destroy();
     bool isBroken() const;
+    void takeHit();
 
     // Ajout des méthodes manquantes
     sf::FloatRect getBounds() const;

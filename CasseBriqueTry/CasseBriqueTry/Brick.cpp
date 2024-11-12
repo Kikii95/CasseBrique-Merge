@@ -76,13 +76,30 @@ void Brick::loadTextures() {
     }
 }
 
-// Méthode pour appliquer un coup à la brique
+void Brick::takeHit() {
+    if (--hitsRemaining == 1) {
+        int textureIndex = rand() % damagedTextures.size();
+        shape.setTexture(&damagedTextures[textureIndex]);
+    }
+    if (hitsRemaining <= 0) {
+        destroy();
+    }
+}
+
 //void Brick::takeHit() {
-//    if (--hitsRemaining == 1) {
-//        int textureIndex = rand() % damagedTextures.size();
-//        shape.setTexture(&damagedTextures[textureIndex]);
-//    }
-//    if (hitsRemaining <= 0) {
-//        destroy();
+//    hitsRemaining--;
+//
+//    if (hitsRemaining == 1) {
+//        // Passe � la texture endommag�e apr�s le premier coup
+//        int textureIndex = -1;
+//        for (size_t i = 0; i < normalTextures.size(); ++i) {
+//            if (&normalTextures[i] == shape.getTexture()) { // Compare les adresses des textures
+//                textureIndex = i;
+//                break;
+//            }
+//        }
+//        if (textureIndex != -1) {
+//            shape.setTexture(&damagedTextures[textureIndex]);
+//        }
 //    }
 //}

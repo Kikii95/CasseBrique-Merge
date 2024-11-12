@@ -6,6 +6,7 @@
 #include <sstream>
 #include <SFML/Graphics.hpp>
 #include "json.hpp"
+#include "Game.h"
 using json = nlohmann::json;
 
 
@@ -66,5 +67,5 @@ void LevelManager::renderLevel(sf::RenderWindow& window, Pad& pad, Ball& ball, c
             window.draw(brick.getShape());
         }
 
-    
+    }
 }

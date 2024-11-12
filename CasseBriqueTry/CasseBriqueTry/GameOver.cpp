@@ -90,7 +90,7 @@ bool GameOver::handleEvent(sf::Event& event) {
         else if (event.key.code == sf::Keyboard::Enter) {
             select(); // Appeler la méthode de sélection
         }
-        return false
+        return false;
     }
 
 

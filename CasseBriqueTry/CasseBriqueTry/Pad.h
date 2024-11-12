@@ -23,7 +23,6 @@ public:
     virtual void setSize(int size);
     bool isShieldActive;
     
-    void displayPosition();
     sf::RectangleShape getShape() const;
 
     /*void setInvertedControls(bool inverted);*/
